@@ -1,2 +1,2 @@
-# Savor
+# Cocina
 A recipe app 
