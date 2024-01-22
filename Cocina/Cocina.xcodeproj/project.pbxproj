@@ -16,7 +16,7 @@
 		21DF45802B5B250700FE11F5 /* CocinaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DF457F2B5B250700FE11F5 /* CocinaTests.swift */; };
 		21DF458A2B5B250700FE11F5 /* CocinaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DF45892B5B250700FE11F5 /* CocinaUITests.swift */; };
 		21DF458C2B5B250700FE11F5 /* CocinaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DF458B2B5B250700FE11F5 /* CocinaUITestsLaunchTests.swift */; };
-		21DF45A72B5B276800FE11F5 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DF45A62B5B276800FE11F5 /* OnboardingViewController.swift */; };
+		21DF45A72B5B276800FE11F5 /* OnboardingHostingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DF45A62B5B276800FE11F5 /* OnboardingHostingViewController.swift */; };
 		21DF45A92B5B277200FE11F5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DF45A82B5B277200FE11F5 /* HomeViewController.swift */; };
 		21DF45AB2B5B277D00FE11F5 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DF45AA2B5B277D00FE11F5 /* ExploreViewController.swift */; };
 		21DF45AD2B5B278700FE11F5 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DF45AC2B5B278700FE11F5 /* SearchViewController.swift */; };
@@ -24,6 +24,9 @@
 		21DF45B12B5B279F00FE11F5 /* GroceriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DF45B02B5B279F00FE11F5 /* GroceriesViewController.swift */; };
 		21DF45B32B5B27A600FE11F5 /* ChefViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DF45B22B5B27A600FE11F5 /* ChefViewController.swift */; };
 		21DF45B52B5B27AE00FE11F5 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DF45B42B5B27AE00FE11F5 /* SettingsViewController.swift */; };
+		21DF45BA2B5C78E200FE11F5 /* OnboardingAccountSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DF45B92B5C78E200FE11F5 /* OnboardingAccountSelectionView.swift */; };
+		21DF45BC2B5DA71400FE11F5 /* RamenColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DF45BB2B5DA71400FE11F5 /* RamenColors.swift */; };
+		21DF45BE2B5DAE1B00FE11F5 /* OnboardingLoginScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DF45BD2B5DAE1B00FE11F5 /* OnboardingLoginScreenView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +60,7 @@
 		21DF45852B5B250700FE11F5 /* CocinaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CocinaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		21DF45892B5B250700FE11F5 /* CocinaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocinaUITests.swift; sourceTree = "<group>"; };
 		21DF458B2B5B250700FE11F5 /* CocinaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocinaUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		21DF45A62B5B276800FE11F5 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		21DF45A62B5B276800FE11F5 /* OnboardingHostingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingHostingViewController.swift; sourceTree = "<group>"; };
 		21DF45A82B5B277200FE11F5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		21DF45AA2B5B277D00FE11F5 /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
 		21DF45AC2B5B278700FE11F5 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
@@ -65,6 +68,9 @@
 		21DF45B02B5B279F00FE11F5 /* GroceriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceriesViewController.swift; sourceTree = "<group>"; };
 		21DF45B22B5B27A600FE11F5 /* ChefViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChefViewController.swift; sourceTree = "<group>"; };
 		21DF45B42B5B27AE00FE11F5 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		21DF45B92B5C78E200FE11F5 /* OnboardingAccountSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingAccountSelectionView.swift; sourceTree = "<group>"; };
+		21DF45BB2B5DA71400FE11F5 /* RamenColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RamenColors.swift; sourceTree = "<group>"; };
+		21DF45BD2B5DAE1B00FE11F5 /* OnboardingLoginScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingLoginScreenView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,7 +176,9 @@
 		21DF45992B5B258900FE11F5 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
-				21DF45A62B5B276800FE11F5 /* OnboardingViewController.swift */,
+				21DF45A62B5B276800FE11F5 /* OnboardingHostingViewController.swift */,
+				21DF45B92B5C78E200FE11F5 /* OnboardingAccountSelectionView.swift */,
+				21DF45BD2B5DAE1B00FE11F5 /* OnboardingLoginScreenView.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -234,6 +242,7 @@
 		21DF45A12B5B26D700FE11F5 /* Colors */ = {
 			isa = PBXGroup;
 			children = (
+				21DF45BB2B5DA71400FE11F5 /* RamenColors.swift */,
 			);
 			path = Colors;
 			sourceTree = "<group>";
@@ -420,15 +429,18 @@
 			files = (
 				21DF45A92B5B277200FE11F5 /* HomeViewController.swift in Sources */,
 				21DF45AD2B5B278700FE11F5 /* SearchViewController.swift in Sources */,
+				21DF45BE2B5DAE1B00FE11F5 /* OnboardingLoginScreenView.swift in Sources */,
 				21DF45B52B5B27AE00FE11F5 /* SettingsViewController.swift in Sources */,
 				21DF456D2B5B250400FE11F5 /* ViewController.swift in Sources */,
 				21DF45B12B5B279F00FE11F5 /* GroceriesViewController.swift in Sources */,
 				21DF45AB2B5B277D00FE11F5 /* ExploreViewController.swift in Sources */,
 				21DF45692B5B250400FE11F5 /* AppDelegate.swift in Sources */,
+				21DF45BC2B5DA71400FE11F5 /* RamenColors.swift in Sources */,
 				21DF45B32B5B27A600FE11F5 /* ChefViewController.swift in Sources */,
+				21DF45BA2B5C78E200FE11F5 /* OnboardingAccountSelectionView.swift in Sources */,
 				21DF45AF2B5B279400FE11F5 /* PlanViewController.swift in Sources */,
 				21DF456B2B5B250400FE11F5 /* SceneDelegate.swift in Sources */,
-				21DF45A72B5B276800FE11F5 /* OnboardingViewController.swift in Sources */,
+				21DF45A72B5B276800FE11F5 /* OnboardingHostingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
