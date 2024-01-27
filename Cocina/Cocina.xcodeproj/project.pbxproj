@@ -46,7 +46,6 @@
 		658FC9F32B6458D000FE6D9F /* EditPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658FC9F22B6458D000FE6D9F /* EditPasswordViewController.swift */; };
 		658FC9F52B64631500FE6D9F /* EditProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658FC9F42B64631500FE6D9F /* EditProfileTableViewCell.swift */; };
 		658FC9F82B646AE900FE6D9F /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 658FC9F72B646AE900FE6D9F /* SnapKit */; };
-		658FC9FA2B646AE900FE6D9F /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 658FC9F92B646AE900FE6D9F /* SnapKit-Dynamic */; };
 		659C9E822B5F224C008E292B /* ProfileMainHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659C9E812B5F224C008E292B /* ProfileMainHeader.swift */; };
 /* End PBXBuildFile section */
 
@@ -118,7 +117,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				658FC9F82B646AE900FE6D9F /* SnapKit in Frameworks */,
-				658FC9FA2B646AE900FE6D9F /* SnapKit-Dynamic in Frameworks */,
 				213D016D2B60746400DAA75A /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,7 +428,6 @@
 			name = Cocina;
 			packageProductDependencies = (
 				658FC9F72B646AE900FE6D9F /* SnapKit */,
-				658FC9F92B646AE900FE6D9F /* SnapKit-Dynamic */,
 				213D016C2B60746400DAA75A /* Lottie */,
 			);
 			productName = Cocina;
@@ -529,7 +526,6 @@
 				213D01702B60750300DAA75A /* check.json in Resources */,
 				21DF45722B5B250600FE11F5 /* Assets.xcassets in Resources */,
 				213D017B2B6311B200DAA75A /* loadingSpinner.json in Resources */,
-				21DF45702B5B250400FE11F5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -923,14 +919,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-        658FC9F62B646AE900FE6D9F /* XCRemoteSwiftPackageReference "SnapKit" */ = {
-            isa = XCRemoteSwiftPackageReference;
-            repositoryURL = "https://github.com/SnapKit/SnapKit.git";
-            requirement = {
-                kind = upToNextMajorVersion;
-                minimumVersion = 5.7.0;
-            };
-        };
 		213D016B2B60746400DAA75A /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/airbnb/lottie-spm.git";
@@ -939,23 +927,26 @@
 				minimumVersion = 4.4.0;
 			};
 		};
+		658FC9F62B646AE900FE6D9F /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		658FC9F72B646AE900FE6D9F /* SnapKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 658FC9F62B646AE900FE6D9F /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = SnapKit;
-		};
-		658FC9F92B646AE900FE6D9F /* SnapKit-Dynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 658FC9F62B646AE900FE6D9F /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = "SnapKit-Dynamic";
-        };
 		213D016C2B60746400DAA75A /* Lottie */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 213D016B2B60746400DAA75A /* XCRemoteSwiftPackageReference "lottie-spm" */;
 			productName = Lottie;
+		};
+		658FC9F72B646AE900FE6D9F /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 658FC9F62B646AE900FE6D9F /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

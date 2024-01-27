@@ -54,7 +54,7 @@ private extension OnboardingEnterPasswordView {
         Button(action: {}, label: {
             Text("Create account")
             .padding([.leading, .trailing], 20)
-            .ramenFont(for: .title3, weight: .semibold)
+            .ramenFont(for: .headingS)
             .frame(height: 50)
             .background(Color.background.ramenPrimary)
             .foregroundStyle(.white)
@@ -66,7 +66,7 @@ private extension OnboardingEnterPasswordView {
         Button(action: {}, label: {
             Image(systemName: "arrow.left")
             .padding([.leading, .trailing], 20)
-            .ramenFont(for: .title, weight: .semibold)
+            .ramenFont(for: .headingL)
             .frame(height: 50)
             .background(Color.clear)
             .foregroundStyle(Color.background.ramenPrimary)

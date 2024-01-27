@@ -16,10 +16,10 @@ struct OnboardingPasswordResetScreenView: View {
                 .ignoresSafeArea()
             VStack {
                 Text("Reset password")
-                    .ramenFont(for: .largeTitle, weight: .bold)
+                    .ramenFont(for: .headingXL)
                     .foregroundStyle(Color.background.ramenPrimary)
                 Text("We will send you an email to reset your password.")
-                    .ramenFont(for: .body, weight: .semibold)
+                    .ramenFont(for: .bodyM)
                     .foregroundStyle(Color.text.secondary)
                     .multilineTextAlignment(.center)
                     .padding([.trailing, .leading])

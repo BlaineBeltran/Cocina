@@ -45,7 +45,7 @@ private extension OnboardingGettingReadyView {
     
     private var waitingMessage: some View {
        Text("Getting everything ready for you...")
-            .ramenFont(for: .body, weight: .semibold)
+            .ramenFont(for: .bodyM)
             .foregroundStyle(Color.text.secondary)
     }
     

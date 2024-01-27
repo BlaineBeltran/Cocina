@@ -52,7 +52,7 @@ private extension OnboardingEnterEmailView {
                 Text("Next")
                 Image(systemName: "arrow.right")
             }
-            .ramenFont(for: .title3, weight: .semibold)
+            .ramenFont(for: .headingS)
             .frame(height: 50)
             .frame(maxWidth: .infinity)
             .background(Color.background.ramenPrimary)
