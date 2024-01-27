@@ -10,11 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    // leaving this to test SwiftUI views
-    let hostingController = UIHostingController(rootView: OnboardingLoginScreenView())
-
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // leaving this to test SwiftUI views
+        let rootView = OnboardingLoginScreenView()
+        rootView.configure()
+        let hostingController = UIHostingController(rootView: rootView)
         
         addChild(hostingController)
         view.addSubview(hostingController.view)
@@ -27,7 +29,5 @@ class ViewController: UIViewController {
         hostingController.view.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
         
     }
-
-
 }
 

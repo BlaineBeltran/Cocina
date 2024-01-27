@@ -34,8 +34,7 @@ extension OnboardingAccountSelectionView {
     private var loginButton: some View {
         Button(action: {}, label: {
             Text("Login")
-                .font(.title3)
-                .fontWeight(.semibold)
+                .ramenFont(for: .headingS)
         })
         .frame(maxWidth: 359)
         .frame(height: 50)
@@ -47,8 +46,7 @@ extension OnboardingAccountSelectionView {
     private var createAccountButton: some View {
         Button(action: {}, label: {
             Text("Create account")
-                .font(.title3)
-                .fontWeight(.semibold)
+                .ramenFont(for: .headingS)
         })
         .frame(maxWidth: 359)
         .frame(height: 50)
