@@ -10,7 +10,6 @@
 		21DF45692B5B250400FE11F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DF45682B5B250400FE11F5 /* AppDelegate.swift */; };
 		21DF456B2B5B250400FE11F5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DF456A2B5B250400FE11F5 /* SceneDelegate.swift */; };
 		21DF456D2B5B250400FE11F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DF456C2B5B250400FE11F5 /* ViewController.swift */; };
-		21DF45702B5B250400FE11F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21DF456E2B5B250400FE11F5 /* Main.storyboard */; };
 		21DF45722B5B250600FE11F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21DF45712B5B250600FE11F5 /* Assets.xcassets */; };
 		21DF45752B5B250600FE11F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21DF45732B5B250600FE11F5 /* LaunchScreen.storyboard */; };
 		21DF45802B5B250700FE11F5 /* CocinaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DF457F2B5B250700FE11F5 /* CocinaTests.swift */; };
@@ -27,6 +26,12 @@
 		21DF45BA2B5C78E200FE11F5 /* OnboardingAccountSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DF45B92B5C78E200FE11F5 /* OnboardingAccountSelectionView.swift */; };
 		21DF45BC2B5DA71400FE11F5 /* RamenColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DF45BB2B5DA71400FE11F5 /* RamenColors.swift */; };
 		21DF45BE2B5DAE1B00FE11F5 /* OnboardingLoginScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DF45BD2B5DAE1B00FE11F5 /* OnboardingLoginScreenView.swift */; };
+		658FC9F12B6450C700FE6D9F /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658FC9F02B6450C700FE6D9F /* EditProfileViewController.swift */; };
+		658FC9F32B6458D000FE6D9F /* EditPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658FC9F22B6458D000FE6D9F /* EditPasswordViewController.swift */; };
+		658FC9F52B64631500FE6D9F /* EditProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658FC9F42B64631500FE6D9F /* EditProfileTableViewCell.swift */; };
+		658FC9F82B646AE900FE6D9F /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 658FC9F72B646AE900FE6D9F /* SnapKit */; };
+		658FC9FA2B646AE900FE6D9F /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 658FC9F92B646AE900FE6D9F /* SnapKit-Dynamic */; };
+		659C9E822B5F224C008E292B /* ProfileMainHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659C9E812B5F224C008E292B /* ProfileMainHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +56,6 @@
 		21DF45682B5B250400FE11F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		21DF456A2B5B250400FE11F5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		21DF456C2B5B250400FE11F5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		21DF456F2B5B250400FE11F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		21DF45712B5B250600FE11F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		21DF45742B5B250600FE11F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		21DF45762B5B250600FE11F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -71,6 +75,10 @@
 		21DF45B92B5C78E200FE11F5 /* OnboardingAccountSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingAccountSelectionView.swift; sourceTree = "<group>"; };
 		21DF45BB2B5DA71400FE11F5 /* RamenColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RamenColors.swift; sourceTree = "<group>"; };
 		21DF45BD2B5DAE1B00FE11F5 /* OnboardingLoginScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingLoginScreenView.swift; sourceTree = "<group>"; };
+		658FC9F02B6450C700FE6D9F /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+		658FC9F22B6458D000FE6D9F /* EditPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPasswordViewController.swift; sourceTree = "<group>"; };
+		658FC9F42B64631500FE6D9F /* EditProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileTableViewCell.swift; sourceTree = "<group>"; };
+		659C9E812B5F224C008E292B /* ProfileMainHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileMainHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +86,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				658FC9F82B646AE900FE6D9F /* SnapKit in Frameworks */,
+				658FC9FA2B646AE900FE6D9F /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +147,6 @@
 				21DF45682B5B250400FE11F5 /* AppDelegate.swift */,
 				21DF456A2B5B250400FE11F5 /* SceneDelegate.swift */,
 				21DF456C2B5B250400FE11F5 /* ViewController.swift */,
-				21DF456E2B5B250400FE11F5 /* Main.storyboard */,
 				21DF45712B5B250600FE11F5 /* Assets.xcassets */,
 				21DF45732B5B250600FE11F5 /* LaunchScreen.storyboard */,
 				21DF45762B5B250600FE11F5 /* Info.plist */,
@@ -235,6 +244,10 @@
 			isa = PBXGroup;
 			children = (
 				21DF45B42B5B27AE00FE11F5 /* SettingsViewController.swift */,
+				659C9E812B5F224C008E292B /* ProfileMainHeader.swift */,
+				658FC9F02B6450C700FE6D9F /* EditProfileViewController.swift */,
+				658FC9F22B6458D000FE6D9F /* EditPasswordViewController.swift */,
+				658FC9F42B64631500FE6D9F /* EditProfileTableViewCell.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -312,6 +325,10 @@
 			dependencies = (
 			);
 			name = Cocina;
+			packageProductDependencies = (
+				658FC9F72B646AE900FE6D9F /* SnapKit */,
+				658FC9F92B646AE900FE6D9F /* SnapKit-Dynamic */,
+			);
 			productName = Cocina;
 			productReference = 21DF45652B5B250400FE11F5 /* Cocina.app */;
 			productType = "com.apple.product-type.application";
@@ -384,6 +401,9 @@
 				Base,
 			);
 			mainGroup = 21DF455C2B5B250400FE11F5;
+			packageReferences = (
+				658FC9F62B646AE900FE6D9F /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 21DF45662B5B250400FE11F5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -402,7 +422,6 @@
 			files = (
 				21DF45752B5B250600FE11F5 /* LaunchScreen.storyboard in Resources */,
 				21DF45722B5B250600FE11F5 /* Assets.xcassets in Resources */,
-				21DF45702B5B250400FE11F5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,7 +446,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				658FC9F12B6450C700FE6D9F /* EditProfileViewController.swift in Sources */,
+				658FC9F52B64631500FE6D9F /* EditProfileTableViewCell.swift in Sources */,
 				21DF45A92B5B277200FE11F5 /* HomeViewController.swift in Sources */,
+				659C9E822B5F224C008E292B /* ProfileMainHeader.swift in Sources */,
 				21DF45AD2B5B278700FE11F5 /* SearchViewController.swift in Sources */,
 				21DF45BE2B5DAE1B00FE11F5 /* OnboardingLoginScreenView.swift in Sources */,
 				21DF45B52B5B27AE00FE11F5 /* SettingsViewController.swift in Sources */,
@@ -437,6 +459,7 @@
 				21DF45692B5B250400FE11F5 /* AppDelegate.swift in Sources */,
 				21DF45BC2B5DA71400FE11F5 /* RamenColors.swift in Sources */,
 				21DF45B32B5B27A600FE11F5 /* ChefViewController.swift in Sources */,
+				658FC9F32B6458D000FE6D9F /* EditPasswordViewController.swift in Sources */,
 				21DF45BA2B5C78E200FE11F5 /* OnboardingAccountSelectionView.swift in Sources */,
 				21DF45AF2B5B279400FE11F5 /* PlanViewController.swift in Sources */,
 				21DF456B2B5B250400FE11F5 /* SceneDelegate.swift in Sources */,
@@ -477,14 +500,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		21DF456E2B5B250400FE11F5 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				21DF456F2B5B250400FE11F5 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		21DF45732B5B250600FE11F5 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -627,7 +642,6 @@
 				INFOPLIST_FILE = Cocina/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -655,7 +669,6 @@
 				INFOPLIST_FILE = Cocina/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -787,6 +800,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		658FC9F62B646AE900FE6D9F /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		658FC9F72B646AE900FE6D9F /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 658FC9F62B646AE900FE6D9F /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		658FC9F92B646AE900FE6D9F /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 658FC9F62B646AE900FE6D9F /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 21DF455D2B5B250400FE11F5 /* Project object */;
 }
