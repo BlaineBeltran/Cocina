@@ -12,12 +12,12 @@ class ProfileMainHeader: UITableViewHeaderFooterView {
 
     let profilePicture: UIImageView = {
         let profilePicture = UIImageView(image: UIImage(named: "ProfilePicture1"))
-        profilePicture.translatesAutoresizingMaskIntoConstraints = false
         return profilePicture
     }()
     
     let nameLabel: UILabel = {
         let label = UILabel()
+        label.font = .ramenFont(for: .headingL)
         label.textColor = .text.primary
         label.text = "Blaine Beltran"
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -32,6 +32,15 @@ class ProfileMainHeader: UITableViewHeaderFooterView {
         return label
     }()
     
+    lazy var stackView: UIStackView = {
+       let stackView = UIStackView(arrangedSubviews: [profilePicture, nameLabel, emailLabel])
+        stackView.axis = .vertical
+        stackView.alignment = .center
+        stackView.distribution = .fill
+        stackView.spacing = 3
+        return stackView
+    }()
+    
     override init(reuseIdentifier: String?) {
         super.init(reuseIdentifier: reuseIdentifier)
 
@@ -43,18 +52,10 @@ class ProfileMainHeader: UITableViewHeaderFooterView {
     }
     
     private func configureUI() {
-        addSubview(profilePicture)
-        addSubview(nameLabel)
-        addSubview(emailLabel)
-        
-        NSLayoutConstraint.activate([
-            profilePicture.leadingAnchor.constraint(equalTo: contentView.safeAreaLayoutGuide.leadingAnchor, constant: 10),
-            profilePicture.topAnchor.constraint(equalTo: contentView.safeAreaLayoutGuide.topAnchor, constant: 10),
-            nameLabel.topAnchor.constraint(equalTo: contentView.safeAreaLayoutGuide.topAnchor, constant: 20),
-            nameLabel.leadingAnchor.constraint(equalTo: profilePicture.trailingAnchor, constant: 10),
-            emailLabel.topAnchor.constraint(equalTo: nameLabel.bottomAnchor, constant: 10),
-            emailLabel.leadingAnchor.constraint(equalTo: profilePicture.trailingAnchor, constant: 10)
-        ])
+        addSubview(stackView)
+        stackView.snp.makeConstraints { make in
+            make.edges.equalTo(contentView)
+        }
     }
 
 }
@@ -71,7 +72,7 @@ struct ProfileMainHeaderRepresdentable: UIViewRepresentable {
 struct ProfileMainHeader_Preview: PreviewProvider {
     static var previews: some View {
         ProfileMainHeaderRepresdentable()
-            .frame(width: 300, height: 100)
+            .frame(width: 300, height: 200)
             .previewLayout(.sizeThatFits)
     }
 }
