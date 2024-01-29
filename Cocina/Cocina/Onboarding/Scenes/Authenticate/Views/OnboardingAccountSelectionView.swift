@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct OnboardingAccountSelectionView: View {
+    @State var presentLogin = false
+    @State var presentAccountCreation = false
+    
     var body: some View {
         VStack {
             appIconImage
@@ -15,6 +18,12 @@ struct OnboardingAccountSelectionView: View {
             loginButton
             createAccountButton
         }
+        .sheet(isPresented: $presentLogin, content: {
+            OnboardingLoginScreenView()
+        })
+        .sheet(isPresented: $presentAccountCreation, content: {
+            OnboardingEnterEmailView()
+        })
     }
 }
 
@@ -32,10 +41,11 @@ extension OnboardingAccountSelectionView {
             .padding(.top, 50)
     }
     private var loginButton: some View {
-        Button(action: {}, label: {
+        Button(action: {
+            presentLogin.toggle()
+        }, label: {
             Text("Login")
-                .font(.title3)
-                .fontWeight(.semibold)
+                .ramenFont(for: .headingS)
         })
         .frame(maxWidth: 359)
         .frame(height: 50)
@@ -45,10 +55,11 @@ extension OnboardingAccountSelectionView {
     }
     
     private var createAccountButton: some View {
-        Button(action: {}, label: {
+        Button(action: {
+            presentAccountCreation.toggle()
+        }, label: {
             Text("Create account")
-                .font(.title3)
-                .fontWeight(.semibold)
+                .ramenFont(for: .headingS)
         })
         .frame(maxWidth: 359)
         .frame(height: 50)
