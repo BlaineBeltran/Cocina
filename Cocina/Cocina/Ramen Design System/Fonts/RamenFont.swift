@@ -41,7 +41,9 @@ extension UIFont {
             return UIFont.preferredFont(forTextStyle: fontStyleAndWeight.style)
         }
         let size = descriptor.pointSize
-        let font = UIFont.systemFont(ofSize: size, weight: fontStyleAndWeight.weight)
+        let traits = [UIFontDescriptor.TraitKey.weight: fontStyleAndWeight.weight]
+        let weightedDescriptor = descriptor.addingAttributes([.traits: traits])
+        let font = UIFont(descriptor: weightedDescriptor, size: size)
         let scalableFont = UIFontMetrics(forTextStyle: fontStyleAndWeight.style).scaledFont(for: font)
         return scalableFont
     }

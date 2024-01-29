@@ -28,8 +28,11 @@ class OnboardingHostingViewController: UIViewController {
 
         // Add your hosting controller as a child, etc.
         addChild(hostingController)
-        hostingController.view.frame = view.bounds
         view.addSubview(hostingController.view)
         hostingController.didMove(toParent: self)
+        
+        hostingController.view.snp.makeConstraints { make in
+            make.edges.equalTo(view)
+        }
     }
 }
