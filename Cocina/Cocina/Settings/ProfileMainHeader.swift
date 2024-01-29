@@ -18,6 +18,7 @@ class ProfileMainHeader: UITableViewHeaderFooterView {
     
     let nameLabel: UILabel = {
         let label = UILabel()
+        label.font = .ramenFont(for: .headingL)
         label.textColor = .text.primary
         label.text = "Blaine Beltran"
         label.translatesAutoresizingMaskIntoConstraints = false
