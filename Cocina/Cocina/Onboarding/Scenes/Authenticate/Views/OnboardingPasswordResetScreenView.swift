@@ -31,6 +31,7 @@ struct OnboardingPasswordResetScreenView: View {
             }
             .padding(.top, 50)
         }
+        .navigationBarBackButtonHidden(true)
     }
 }
 

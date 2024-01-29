@@ -1,29 +1,35 @@
 //
-//  OnboardingViewController.swift
+//  OnboardingHostingViewController.swift
 //  Cocina
 //
-//  Created by Blaine Beltran on 1/19/24.
+//  Created by Blaine Beltran on 1/28/24.
 //
 
 import UIKit
+import SwiftUI
+import SnapKit
 
-class OnboardingViewController: UIViewController {
+protocol AuthenticateDisplayable {
+    func displayAuthentication(viewModel: Authenticate.LogUserIn.ViewModel)
+}
 
+extension OnboardingHostingViewController: AuthenticateDisplayable {
+    func displayAuthentication(viewModel: Authenticate.LogUserIn.ViewModel) {
+        // Still learning if this goes here
+    }
+}
+
+class OnboardingHostingViewController: UIViewController {    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let contentView = OnboardingAccountSelectionView()
+        let hostingController = UIHostingController(rootView: contentView)
 
-        // Do any additional setup after loading the view.
+        // Add your hosting controller as a child, etc.
+        addChild(hostingController)
+        hostingController.view.frame = view.bounds
+        view.addSubview(hostingController.view)
+        hostingController.didMove(toParent: self)
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

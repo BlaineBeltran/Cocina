@@ -7,22 +7,13 @@
 
 import SwiftUI
 
-protocol AuthenticateDisplayable {
-    func displayAuthentication(viewModel: Authenticate.LogUserIn.ViewModel)
-}
-
-extension OnboardingLoginScreenView: AuthenticateDisplayable {
-    func displayAuthentication(viewModel: Authenticate.LogUserIn.ViewModel) {
-        // Still learning if this goes here
-    }
-}
-
 struct OnboardingLoginScreenView: View {
     @State private var username: String = ""
     @State private var password: String = ""
     
     var interactor: Authenticateable?
-    
+    var router: AuthenticateRoutable?
+
     var body: some View {
         ZStack {
             Color.background.ramenFormPrimary
@@ -72,7 +63,9 @@ extension OnboardingLoginScreenView {
     }
     
     private var forgotPasswordButton: some View {
-        Button(action: {}, label: {
+        Button(action: {
+            router?.navigateTo(destination: .passwordReset)
+        }, label: {
             Text("Forgot password?")
                 .ramenFont(for: .headingS)
         })

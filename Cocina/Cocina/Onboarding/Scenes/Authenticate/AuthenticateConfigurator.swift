@@ -7,14 +7,16 @@
 
 import SwiftUI
 
-extension OnboardingLoginScreenView {
-    func configure() {
+
+extension OnboardingHostingViewController {
+    
+    func configure(vc: UIViewController){
         var view = self
         let interactor = AuthenticateInteractor()
         let presenter = AuthenticatePresenter()
-        
-        view.interactor = interactor
+        let router  = AuthenticateRouter(presentingViewController: vc)
         interactor.presenter = presenter
         presenter.view = view
     }
 }
+

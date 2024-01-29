@@ -23,15 +23,15 @@
 		213D018A2B645D0200DAA75A /* AuthenticateInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213D01892B645D0200DAA75A /* AuthenticateInteractor.swift */; };
 		213D018C2B645EF000DAA75A /* AuthenticatePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213D018B2B645EF000DAA75A /* AuthenticatePresenter.swift */; };
 		213D018E2B6461FF00DAA75A /* AuthenticateConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213D018D2B6461FF00DAA75A /* AuthenticateConfigurator.swift */; };
+		21B4B0DA2B66C3C500FD5C6A /* AuthenticateRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B4B0D92B66C3C500FD5C6A /* AuthenticateRouter.swift */; };
+		21B4B0DC2B66D76D00FD5C6A /* OnboardingHostingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B4B0DB2B66D76D00FD5C6A /* OnboardingHostingViewController.swift */; };
 		21DF45692B5B250400FE11F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DF45682B5B250400FE11F5 /* AppDelegate.swift */; };
 		21DF456B2B5B250400FE11F5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DF456A2B5B250400FE11F5 /* SceneDelegate.swift */; };
-		21DF456D2B5B250400FE11F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DF456C2B5B250400FE11F5 /* ViewController.swift */; };
 		21DF45722B5B250600FE11F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21DF45712B5B250600FE11F5 /* Assets.xcassets */; };
 		21DF45752B5B250600FE11F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21DF45732B5B250600FE11F5 /* LaunchScreen.storyboard */; };
 		21DF45802B5B250700FE11F5 /* CocinaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DF457F2B5B250700FE11F5 /* CocinaTests.swift */; };
 		21DF458A2B5B250700FE11F5 /* CocinaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DF45892B5B250700FE11F5 /* CocinaUITests.swift */; };
 		21DF458C2B5B250700FE11F5 /* CocinaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DF458B2B5B250700FE11F5 /* CocinaUITestsLaunchTests.swift */; };
-		21DF45A72B5B276800FE11F5 /* OnboardingHostingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DF45A62B5B276800FE11F5 /* OnboardingHostingViewController.swift */; };
 		21DF45A92B5B277200FE11F5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DF45A82B5B277200FE11F5 /* HomeViewController.swift */; };
 		21DF45AB2B5B277D00FE11F5 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DF45AA2B5B277D00FE11F5 /* ExploreViewController.swift */; };
 		21DF45AD2B5B278700FE11F5 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DF45AC2B5B278700FE11F5 /* SearchViewController.swift */; };
@@ -82,10 +82,11 @@
 		213D01892B645D0200DAA75A /* AuthenticateInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticateInteractor.swift; sourceTree = "<group>"; };
 		213D018B2B645EF000DAA75A /* AuthenticatePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticatePresenter.swift; sourceTree = "<group>"; };
 		213D018D2B6461FF00DAA75A /* AuthenticateConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticateConfigurator.swift; sourceTree = "<group>"; };
+		21B4B0D92B66C3C500FD5C6A /* AuthenticateRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticateRouter.swift; sourceTree = "<group>"; };
+		21B4B0DB2B66D76D00FD5C6A /* OnboardingHostingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingHostingViewController.swift; sourceTree = "<group>"; };
 		21DF45652B5B250400FE11F5 /* Cocina.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cocina.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21DF45682B5B250400FE11F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		21DF456A2B5B250400FE11F5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		21DF456C2B5B250400FE11F5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		21DF45712B5B250600FE11F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		21DF45742B5B250600FE11F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		21DF45762B5B250600FE11F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -94,7 +95,6 @@
 		21DF45852B5B250700FE11F5 /* CocinaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CocinaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		21DF45892B5B250700FE11F5 /* CocinaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocinaUITests.swift; sourceTree = "<group>"; };
 		21DF458B2B5B250700FE11F5 /* CocinaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocinaUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		21DF45A62B5B276800FE11F5 /* OnboardingHostingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingHostingViewController.swift; sourceTree = "<group>"; };
 		21DF45A82B5B277200FE11F5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		21DF45AA2B5B277D00FE11F5 /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
 		21DF45AC2B5B278700FE11F5 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
@@ -182,6 +182,7 @@
 				213D01872B645AEE00DAA75A /* AuthenticateModel.swift */,
 				213D01892B645D0200DAA75A /* AuthenticateInteractor.swift */,
 				213D018B2B645EF000DAA75A /* AuthenticatePresenter.swift */,
+				21B4B0D92B66C3C500FD5C6A /* AuthenticateRouter.swift */,
 				213D01862B645AD400DAA75A /* Views */,
 			);
 			path = Authenticate;
@@ -198,7 +199,7 @@
 		213D01862B645AD400DAA75A /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				21DF45A62B5B276800FE11F5 /* OnboardingHostingViewController.swift */,
+				21B4B0DB2B66D76D00FD5C6A /* OnboardingHostingViewController.swift */,
 				21DF45B92B5C78E200FE11F5 /* OnboardingAccountSelectionView.swift */,
 				21DF45BD2B5DAE1B00FE11F5 /* OnboardingLoginScreenView.swift */,
 				213D01672B5F19B200DAA75A /* OnboardingPasswordResetScreenView.swift */,
@@ -245,7 +246,6 @@
 				21DF45B62B5B27F600FE11F5 /* LiveActivities */,
 				21DF45682B5B250400FE11F5 /* AppDelegate.swift */,
 				21DF456A2B5B250400FE11F5 /* SceneDelegate.swift */,
-				21DF456C2B5B250400FE11F5 /* ViewController.swift */,
 				21DF45712B5B250600FE11F5 /* Assets.xcassets */,
 				21DF45732B5B250600FE11F5 /* LaunchScreen.storyboard */,
 				21DF45762B5B250600FE11F5 /* Info.plist */,
@@ -563,23 +563,23 @@
 				21DF45BE2B5DAE1B00FE11F5 /* OnboardingLoginScreenView.swift in Sources */,
 				21DF45B52B5B27AE00FE11F5 /* SettingsViewController.swift in Sources */,
 				213D017F2B63149300DAA75A /* RamenFont.swift in Sources */,
-				21DF456D2B5B250400FE11F5 /* ViewController.swift in Sources */,
 				213D018C2B645EF000DAA75A /* AuthenticatePresenter.swift in Sources */,
 				213D01772B63092A00DAA75A /* OnboardingEnterEmailView.swift in Sources */,
 				213D01792B630DF200DAA75A /* OnboardingEnterPasswordView.swift in Sources */,
 				213D018E2B6461FF00DAA75A /* AuthenticateConfigurator.swift in Sources */,
 				21DF45B12B5B279F00FE11F5 /* GroceriesViewController.swift in Sources */,
+				21B4B0DA2B66C3C500FD5C6A /* AuthenticateRouter.swift in Sources */,
 				21DF45AB2B5B277D00FE11F5 /* ExploreViewController.swift in Sources */,
 				21DF45692B5B250400FE11F5 /* AppDelegate.swift in Sources */,
 				21DF45BC2B5DA71400FE11F5 /* RamenColors.swift in Sources */,
 				213D01732B61C3F200DAA75A /* RamenFormSection.swift in Sources */,
+				21B4B0DC2B66D76D00FD5C6A /* OnboardingHostingViewController.swift in Sources */,
 				213D01882B645AEE00DAA75A /* AuthenticateModel.swift in Sources */,
 				21DF45B32B5B27A600FE11F5 /* ChefViewController.swift in Sources */,
 				658FC9F32B6458D000FE6D9F /* EditPasswordViewController.swift in Sources */,
 				21DF45BA2B5C78E200FE11F5 /* OnboardingAccountSelectionView.swift in Sources */,
 				21DF45AF2B5B279400FE11F5 /* PlanViewController.swift in Sources */,
 				21DF456B2B5B250400FE11F5 /* SceneDelegate.swift in Sources */,
-				21DF45A72B5B276800FE11F5 /* OnboardingHostingViewController.swift in Sources */,
 				213D018A2B645D0200DAA75A /* AuthenticateInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
