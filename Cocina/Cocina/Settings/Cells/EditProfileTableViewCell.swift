@@ -13,26 +13,27 @@ class EditProfileTableViewCell: UITableViewCell {
     let cellTitle: UILabel = {
         let title = UILabel()
         title.text = "Username"
-        title.font = .preferredFont(forTextStyle: .body)
-        title.translatesAutoresizingMaskIntoConstraints = false
+        title.font = .ramenFont(for: .bodyS)
+        title.textColor = UIColor.text.primary
         return title
     }()
     
-    let cellText: UILabel = {
-        let text = UILabel()
-        text.text = "thisismyusername"
-        text.translatesAutoresizingMaskIntoConstraints = false
-        return text
+    var textField: UITextField = {
+        let textField = UITextField()
+        textField.text = "text"
+        textField.placeholder = "placeholder"
+        textField.font = .ramenFont(for: .bodyS)
+        textField.textColor = UIColor.text.primary
+        textField.returnKeyType = .done
+        return textField
     }()
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        backgroundColor = .blue
         configureUI()
     }
     
@@ -42,17 +43,24 @@ class EditProfileTableViewCell: UITableViewCell {
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-        // Configure the view for the selected state
     }
 
     private func configureUI() {
-        addSubview(cellTitle)
-        addSubview(cellText)
-        NSLayoutConstraint.activate([
-            cellTitle.topAnchor.constraint(equalTo: contentView.topAnchor),
-            cellText.topAnchor.constraint(equalTo: cellTitle.bottomAnchor, constant: 5)
-        ])
-        
+        /// Discusssion:  Adding subview to ContentView vs TableViewCell directly
+        /// The content view is resized automatically.
+        contentView.addSubview(cellTitle)
+        contentView.addSubview(textField)
+        cellTitle.snp.makeConstraints { make in
+            make.top.equalTo(contentView.snp.top).offset(10)
+            make.leading.equalTo(contentView.snp.leading).offset(10)
+            make.trailing.equalTo(contentView.snp.trailing)
+        }
+        textField.snp.makeConstraints { make in
+            make.leading.equalTo(contentView.snp.leading).offset(10)
+            make.top.equalTo(cellTitle.snp.bottom).offset(10)
+            make.trailing.equalTo(contentView.snp.trailing)
+            make.bottom.equalTo(contentView.snp.bottom).inset(10)
+        }
     }
 }
 

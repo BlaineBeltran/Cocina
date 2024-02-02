@@ -47,6 +47,8 @@
 		658FC9F52B64631500FE6D9F /* EditProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658FC9F42B64631500FE6D9F /* EditProfileTableViewCell.swift */; };
 		658FC9F82B646AE900FE6D9F /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 658FC9F72B646AE900FE6D9F /* SnapKit */; };
 		659C9E822B5F224C008E292B /* ProfileMainHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659C9E812B5F224C008E292B /* ProfileMainHeader.swift */; };
+		65FE94FA2B6B076000A093CE /* Extensions+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FE94F92B6B076000A093CE /* Extensions+UIViewController.swift */; };
+		65FE94FD2B6D8B3E00A093CE /* EditProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FE94FC2B6D8B3E00A093CE /* EditProfileHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +111,8 @@
 		658FC9F22B6458D000FE6D9F /* EditPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPasswordViewController.swift; sourceTree = "<group>"; };
 		658FC9F42B64631500FE6D9F /* EditProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileTableViewCell.swift; sourceTree = "<group>"; };
 		659C9E812B5F224C008E292B /* ProfileMainHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileMainHeader.swift; sourceTree = "<group>"; };
+		65FE94F92B6B076000A093CE /* Extensions+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Extensions+UIViewController.swift"; path = "Cocina/Settings/Extensions+UIViewController.swift"; sourceTree = SOURCE_ROOT; };
+		65FE94FC2B6D8B3E00A093CE /* EditProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -342,11 +346,10 @@
 		21DF45A02B5B26AF00FE11F5 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				65FE94FB2B6D8AF800A093CE /* Cells */,
 				21DF45B42B5B27AE00FE11F5 /* SettingsViewController.swift */,
-				659C9E812B5F224C008E292B /* ProfileMainHeader.swift */,
 				658FC9F02B6450C700FE6D9F /* EditProfileViewController.swift */,
 				658FC9F22B6458D000FE6D9F /* EditPasswordViewController.swift */,
-				658FC9F42B64631500FE6D9F /* EditProfileTableViewCell.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -378,6 +381,7 @@
 		21DF45A42B5B26E700FE11F5 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				65FE94F92B6B076000A093CE /* Extensions+UIViewController.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -408,6 +412,16 @@
 			children = (
 			);
 			path = Widgets;
+			sourceTree = "<group>";
+		};
+		65FE94FB2B6D8AF800A093CE /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				659C9E812B5F224C008E292B /* ProfileMainHeader.swift */,
+				65FE94FC2B6D8B3E00A093CE /* EditProfileHeader.swift */,
+				658FC9F42B64631500FE6D9F /* EditProfileTableViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -578,6 +592,8 @@
 				21DF45B32B5B27A600FE11F5 /* ChefViewController.swift in Sources */,
 				658FC9F32B6458D000FE6D9F /* EditPasswordViewController.swift in Sources */,
 				21DF45BA2B5C78E200FE11F5 /* OnboardingAccountSelectionView.swift in Sources */,
+				65FE94FA2B6B076000A093CE /* Extensions+UIViewController.swift in Sources */,
+				65FE94FD2B6D8B3E00A093CE /* EditProfileHeader.swift in Sources */,
 				21DF45AF2B5B279400FE11F5 /* PlanViewController.swift in Sources */,
 				21DF456B2B5B250400FE11F5 /* SceneDelegate.swift in Sources */,
 				213D018A2B645D0200DAA75A /* AuthenticateInteractor.swift in Sources */,
