@@ -52,32 +52,33 @@ struct tableViewData {
 
 class SettingsViewController: UIViewController {
     
+    let profileHeader = ProfileMainHeader()
+    
     let tableView: UITableView = {
         let tableview = UITableView(frame: CGRect.zero, style: .insetGrouped)
-        tableview.translatesAutoresizingMaskIntoConstraints = false
         tableview.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
-        tableview.register(ProfileMainHeader.self, forHeaderFooterViewReuseIdentifier: "profileMainHeader")
-        tableview.rowHeight = 50
+        tableview.isScrollEnabled = false
         return tableview
     }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        tableView.backgroundColor = .white
         tableView.dataSource = self
         tableView.delegate = self
         configureUI()
     }
     
     private func configureUI() {
+        view.addSubview(profileHeader)
         view.addSubview(tableView)
-        NSLayoutConstraint.activate([
-            tableView.topAnchor.constraint(equalTo: view.topAnchor),
-            tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-            tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor)
-        ])
+        profileHeader.snp.makeConstraints { make in
+            make.top.leading.trailing.equalTo(view)
+        }
+        tableView.snp.makeConstraints { make in
+            make.top.equalTo(profileHeader.snp.bottom)
+            make.leading.bottom.trailing.equalToSuperview()
+        }
     }
 }
 
@@ -94,7 +95,6 @@ extension SettingsViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as UITableViewCell
-        cell.layer.borderColor = UIColor.blue.cgColor
         cell.accessoryType = .disclosureIndicator
         cell.accessoryView?.backgroundColor = .systemPink
         var content = cell.defaultContentConfiguration()
@@ -105,19 +105,6 @@ extension SettingsViewController: UITableViewDataSource, UITableViewDelegate {
         content.imageProperties.tintColor = .background.ramenPrimary
         cell.contentConfiguration = content
         return cell
-    }
-    
-    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        if section == 0 {
-            let view = tableView.dequeueReusableHeaderFooterView(withIdentifier: "profileMainHeader") as! ProfileMainHeader
-            return view
-        } else {
-            return nil
-        }
-    }
-    
-    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        section == 0 ? 100 : 0
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
