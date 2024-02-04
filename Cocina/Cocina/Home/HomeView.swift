@@ -17,7 +17,7 @@ struct HomeView: View {
             Spacer()
         }
         .sheet(isPresented: $moreSheetIsPresented, onDismiss: dismissAction) {
-            RamenButton(type: .primaryAction, text: "Show settings") {
+            RamenButton(type: .secondaryAction, text: "Show settings") {
                 moreSheetIsPresented.toggle()
             }
             .padding(.top)
