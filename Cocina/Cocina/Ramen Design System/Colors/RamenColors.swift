@@ -20,6 +20,10 @@ extension UIColor {
         static var ramenPrimary: UIColor { UIColor(named: "primary")! }
         static var ramenFormPrimary: UIColor { UIColor(named: "formPrimary")! }
     }
+    
+    enum warnings {
+        static var warningRed: UIColor { UIColor(named: "warningRed")! }
+    }
 }
 
 extension Color {
@@ -32,5 +36,9 @@ extension Color {
     enum background {
         static var ramenPrimary: Color { Color(.background.ramenPrimary) }
         static var ramenFormPrimary: Color { Color(.background.ramenFormPrimary) }
+    }
+    
+    enum warnings {
+        static var warningRed: Color { Color(.warnings.warningRed) }
     }
 }

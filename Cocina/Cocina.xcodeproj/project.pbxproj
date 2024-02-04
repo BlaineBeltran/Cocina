@@ -19,12 +19,14 @@
 		213D017D2B6311D600DAA75A /* OnboardingGettingReadyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213D017C2B6311D600DAA75A /* OnboardingGettingReadyView.swift */; };
 		213D017F2B63149300DAA75A /* RamenFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213D017E2B63149300DAA75A /* RamenFont.swift */; };
 		213D01852B645A8100DAA75A /* TestUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213D01842B645A8100DAA75A /* TestUser.swift */; };
-		213D01882B645AEE00DAA75A /* AuthenticateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213D01872B645AEE00DAA75A /* AuthenticateModel.swift */; };
-		213D018A2B645D0200DAA75A /* AuthenticateInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213D01892B645D0200DAA75A /* AuthenticateInteractor.swift */; };
-		213D018C2B645EF000DAA75A /* AuthenticatePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213D018B2B645EF000DAA75A /* AuthenticatePresenter.swift */; };
-		213D018E2B6461FF00DAA75A /* AuthenticateConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213D018D2B6461FF00DAA75A /* AuthenticateConfigurator.swift */; };
 		21B4B0DA2B66C3C500FD5C6A /* AuthenticateRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B4B0D92B66C3C500FD5C6A /* AuthenticateRouter.swift */; };
-		21B4B0DC2B66D76D00FD5C6A /* OnboardingHostingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B4B0DB2B66D76D00FD5C6A /* OnboardingHostingViewController.swift */; };
+		21B4B0DF2B6D8E8300FD5C6A /* OnboardingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B4B0DE2B6D8E8300FD5C6A /* OnboardingCoordinator.swift */; };
+		21B4B0E22B6D904900FD5C6A /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B4B0E12B6D904900FD5C6A /* AppCoordinator.swift */; };
+		21B4B0E42B6EEC4400FD5C6A /* RamenDescriptionField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B4B0E32B6EEC4400FD5C6A /* RamenDescriptionField.swift */; };
+		21B4B0E62B6FEFFF00FD5C6A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B4B0E52B6FEFFF00FD5C6A /* HomeView.swift */; };
+		21B4B0E92B700AF900FD5C6A /* RamenButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B4B0E82B700AF900FD5C6A /* RamenButton.swift */; };
+		21B4B0EC2B700E0E00FD5C6A /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B4B0EB2B700E0E00FD5C6A /* HomeCoordinator.swift */; };
+		21B4B0EF2B7012BA00FD5C6A /* RamenContentFittingDetent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B4B0EE2B7012BA00FD5C6A /* RamenContentFittingDetent.swift */; };
 		21DF45692B5B250400FE11F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DF45682B5B250400FE11F5 /* AppDelegate.swift */; };
 		21DF456B2B5B250400FE11F5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DF456A2B5B250400FE11F5 /* SceneDelegate.swift */; };
 		21DF45722B5B250600FE11F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21DF45712B5B250600FE11F5 /* Assets.xcassets */; };
@@ -32,7 +34,6 @@
 		21DF45802B5B250700FE11F5 /* CocinaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DF457F2B5B250700FE11F5 /* CocinaTests.swift */; };
 		21DF458A2B5B250700FE11F5 /* CocinaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DF45892B5B250700FE11F5 /* CocinaUITests.swift */; };
 		21DF458C2B5B250700FE11F5 /* CocinaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DF458B2B5B250700FE11F5 /* CocinaUITestsLaunchTests.swift */; };
-		21DF45A92B5B277200FE11F5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DF45A82B5B277200FE11F5 /* HomeViewController.swift */; };
 		21DF45AB2B5B277D00FE11F5 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DF45AA2B5B277D00FE11F5 /* ExploreViewController.swift */; };
 		21DF45AD2B5B278700FE11F5 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DF45AC2B5B278700FE11F5 /* SearchViewController.swift */; };
 		21DF45AF2B5B279400FE11F5 /* PlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DF45AE2B5B279400FE11F5 /* PlanViewController.swift */; };
@@ -80,12 +81,14 @@
 		213D017C2B6311D600DAA75A /* OnboardingGettingReadyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingGettingReadyView.swift; sourceTree = "<group>"; };
 		213D017E2B63149300DAA75A /* RamenFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RamenFont.swift; sourceTree = "<group>"; };
 		213D01842B645A8100DAA75A /* TestUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUser.swift; sourceTree = "<group>"; };
-		213D01872B645AEE00DAA75A /* AuthenticateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticateModel.swift; sourceTree = "<group>"; };
-		213D01892B645D0200DAA75A /* AuthenticateInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticateInteractor.swift; sourceTree = "<group>"; };
-		213D018B2B645EF000DAA75A /* AuthenticatePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticatePresenter.swift; sourceTree = "<group>"; };
-		213D018D2B6461FF00DAA75A /* AuthenticateConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticateConfigurator.swift; sourceTree = "<group>"; };
 		21B4B0D92B66C3C500FD5C6A /* AuthenticateRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticateRouter.swift; sourceTree = "<group>"; };
-		21B4B0DB2B66D76D00FD5C6A /* OnboardingHostingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingHostingViewController.swift; sourceTree = "<group>"; };
+		21B4B0DE2B6D8E8300FD5C6A /* OnboardingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCoordinator.swift; sourceTree = "<group>"; };
+		21B4B0E12B6D904900FD5C6A /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		21B4B0E32B6EEC4400FD5C6A /* RamenDescriptionField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RamenDescriptionField.swift; sourceTree = "<group>"; };
+		21B4B0E52B6FEFFF00FD5C6A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		21B4B0E82B700AF900FD5C6A /* RamenButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RamenButton.swift; sourceTree = "<group>"; };
+		21B4B0EB2B700E0E00FD5C6A /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		21B4B0EE2B7012BA00FD5C6A /* RamenContentFittingDetent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RamenContentFittingDetent.swift; sourceTree = "<group>"; };
 		21DF45652B5B250400FE11F5 /* Cocina.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cocina.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21DF45682B5B250400FE11F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		21DF456A2B5B250400FE11F5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -97,7 +100,6 @@
 		21DF45852B5B250700FE11F5 /* CocinaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CocinaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		21DF45892B5B250700FE11F5 /* CocinaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocinaUITests.swift; sourceTree = "<group>"; };
 		21DF458B2B5B250700FE11F5 /* CocinaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocinaUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		21DF45A82B5B277200FE11F5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		21DF45AA2B5B277D00FE11F5 /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
 		21DF45AC2B5B278700FE11F5 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		21DF45AE2B5B279400FE11F5 /* PlanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanViewController.swift; sourceTree = "<group>"; };
@@ -156,17 +158,9 @@
 			children = (
 				213D01722B61C3F200DAA75A /* RamenFormSection.swift */,
 				213D01742B61C40300DAA75A /* RamenFormField.swift */,
+				21B4B0E32B6EEC4400FD5C6A /* RamenDescriptionField.swift */,
 			);
 			path = Forms;
-			sourceTree = "<group>";
-		};
-		213D01802B64590200DAA75A /* Scenes */ = {
-			isa = PBXGroup;
-			children = (
-				213D01822B64596000DAA75A /* Authenticate */,
-				213D01812B64595300DAA75A /* CreateAccount */,
-			);
-			path = Scenes;
 			sourceTree = "<group>";
 		};
 		213D01812B64595300DAA75A /* CreateAccount */ = {
@@ -182,34 +176,69 @@
 		213D01822B64596000DAA75A /* Authenticate */ = {
 			isa = PBXGroup;
 			children = (
-				213D018D2B6461FF00DAA75A /* AuthenticateConfigurator.swift */,
-				213D01872B645AEE00DAA75A /* AuthenticateModel.swift */,
-				213D01892B645D0200DAA75A /* AuthenticateInteractor.swift */,
-				213D018B2B645EF000DAA75A /* AuthenticatePresenter.swift */,
 				21B4B0D92B66C3C500FD5C6A /* AuthenticateRouter.swift */,
 				213D01862B645AD400DAA75A /* Views */,
 			);
 			path = Authenticate;
 			sourceTree = "<group>";
 		};
-		213D01832B645A7500DAA75A /* Model */ = {
+		213D01832B645A7500DAA75A /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				213D01842B645A8100DAA75A /* TestUser.swift */,
 			);
-			path = Model;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		213D01862B645AD400DAA75A /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				21B4B0DB2B66D76D00FD5C6A /* OnboardingHostingViewController.swift */,
 				21DF45B92B5C78E200FE11F5 /* OnboardingAccountSelectionView.swift */,
 				21DF45BD2B5DAE1B00FE11F5 /* OnboardingLoginScreenView.swift */,
 				213D01672B5F19B200DAA75A /* OnboardingPasswordResetScreenView.swift */,
 				213D01692B606A8600DAA75A /* OnboardingPasswordSentConfirmationScreen.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		21B4B0DD2B6D8E6900FD5C6A /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				21B4B0DE2B6D8E8300FD5C6A /* OnboardingCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		21B4B0E02B6D903100FD5C6A /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				21B4B0E12B6D904900FD5C6A /* AppCoordinator.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		21B4B0E72B700AE500FD5C6A /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				21B4B0E82B700AF900FD5C6A /* RamenButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		21B4B0EA2B700DFB00FD5C6A /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				21B4B0EB2B700E0E00FD5C6A /* HomeCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		21B4B0ED2B7012A300FD5C6A /* Detents */ = {
+			isa = PBXGroup;
+			children = (
+				21B4B0EE2B7012BA00FD5C6A /* RamenContentFittingDetent.swift */,
+			);
+			path = Detents;
 			sourceTree = "<group>";
 		};
 		21DF455C2B5B250400FE11F5 = {
@@ -235,6 +264,7 @@
 		21DF45672B5B250400FE11F5 /* Cocina */ = {
 			isa = PBXGroup;
 			children = (
+				21B4B0E02B6D903100FD5C6A /* Core */,
 				21DF45992B5B258900FE11F5 /* Onboarding */,
 				21DF459A2B5B25C600FE11F5 /* Home */,
 				21DF459B2B5B266200FE11F5 /* Explore */,
@@ -277,6 +307,7 @@
 		21DF45982B5B257100FE11F5 /* Ramen Design System */ = {
 			isa = PBXGroup;
 			children = (
+				21B4B0ED2B7012A300FD5C6A /* Detents */,
 				213D016E2B6074EF00DAA75A /* Lottie Animations */,
 				21DF45A12B5B26D700FE11F5 /* Colors */,
 				21DF45A22B5B26DC00FE11F5 /* Fonts */,
@@ -289,8 +320,10 @@
 		21DF45992B5B258900FE11F5 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
-				213D01832B645A7500DAA75A /* Model */,
-				213D01802B64590200DAA75A /* Scenes */,
+				21B4B0DD2B6D8E6900FD5C6A /* Coordinators */,
+				213D01832B645A7500DAA75A /* Models */,
+				213D01822B64596000DAA75A /* Authenticate */,
+				213D01812B64595300DAA75A /* CreateAccount */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -298,7 +331,8 @@
 		21DF459A2B5B25C600FE11F5 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				21DF45A82B5B277200FE11F5 /* HomeViewController.swift */,
+				21B4B0EA2B700DFB00FD5C6A /* Coordinators */,
+				21B4B0E52B6FEFFF00FD5C6A /* HomeView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -373,6 +407,7 @@
 		21DF45A32B5B26E000FE11F5 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				21B4B0E72B700AE500FD5C6A /* Buttons */,
 				213D01712B61C3D700DAA75A /* Forms */,
 			);
 			path = Components;
@@ -565,30 +600,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				658FC9F12B6450C700FE6D9F /* EditProfileViewController.swift in Sources */,
+				21B4B0DF2B6D8E8300FD5C6A /* OnboardingCoordinator.swift in Sources */,
 				658FC9F52B64631500FE6D9F /* EditProfileTableViewCell.swift in Sources */,
+				21B4B0EF2B7012BA00FD5C6A /* RamenContentFittingDetent.swift in Sources */,
+				21B4B0EC2B700E0E00FD5C6A /* HomeCoordinator.swift in Sources */,
 				213D01752B61C40300DAA75A /* RamenFormField.swift in Sources */,
-				21DF45A92B5B277200FE11F5 /* HomeViewController.swift in Sources */,
 				659C9E822B5F224C008E292B /* ProfileMainHeader.swift in Sources */,
 				213D01682B5F19B200DAA75A /* OnboardingPasswordResetScreenView.swift in Sources */,
+				21B4B0E92B700AF900FD5C6A /* RamenButton.swift in Sources */,
 				213D016A2B606A8600DAA75A /* OnboardingPasswordSentConfirmationScreen.swift in Sources */,
+				21B4B0E22B6D904900FD5C6A /* AppCoordinator.swift in Sources */,
 				213D01852B645A8100DAA75A /* TestUser.swift in Sources */,
 				21DF45AD2B5B278700FE11F5 /* SearchViewController.swift in Sources */,
+				21B4B0E42B6EEC4400FD5C6A /* RamenDescriptionField.swift in Sources */,
 				213D017D2B6311D600DAA75A /* OnboardingGettingReadyView.swift in Sources */,
+				21B4B0E62B6FEFFF00FD5C6A /* HomeView.swift in Sources */,
 				21DF45BE2B5DAE1B00FE11F5 /* OnboardingLoginScreenView.swift in Sources */,
 				21DF45B52B5B27AE00FE11F5 /* SettingsViewController.swift in Sources */,
 				213D017F2B63149300DAA75A /* RamenFont.swift in Sources */,
-				213D018C2B645EF000DAA75A /* AuthenticatePresenter.swift in Sources */,
 				213D01772B63092A00DAA75A /* OnboardingEnterEmailView.swift in Sources */,
 				213D01792B630DF200DAA75A /* OnboardingEnterPasswordView.swift in Sources */,
-				213D018E2B6461FF00DAA75A /* AuthenticateConfigurator.swift in Sources */,
 				21DF45B12B5B279F00FE11F5 /* GroceriesViewController.swift in Sources */,
 				21B4B0DA2B66C3C500FD5C6A /* AuthenticateRouter.swift in Sources */,
 				21DF45AB2B5B277D00FE11F5 /* ExploreViewController.swift in Sources */,
 				21DF45692B5B250400FE11F5 /* AppDelegate.swift in Sources */,
 				21DF45BC2B5DA71400FE11F5 /* RamenColors.swift in Sources */,
 				213D01732B61C3F200DAA75A /* RamenFormSection.swift in Sources */,
-				21B4B0DC2B66D76D00FD5C6A /* OnboardingHostingViewController.swift in Sources */,
-				213D01882B645AEE00DAA75A /* AuthenticateModel.swift in Sources */,
 				21DF45B32B5B27A600FE11F5 /* ChefViewController.swift in Sources */,
 				658FC9F32B6458D000FE6D9F /* EditPasswordViewController.swift in Sources */,
 				21DF45BA2B5C78E200FE11F5 /* OnboardingAccountSelectionView.swift in Sources */,
@@ -596,7 +633,6 @@
 				65FE94FD2B6D8B3E00A093CE /* EditProfileHeader.swift in Sources */,
 				21DF45AF2B5B279400FE11F5 /* PlanViewController.swift in Sources */,
 				21DF456B2B5B250400FE11F5 /* SceneDelegate.swift in Sources */,
-				213D018A2B645D0200DAA75A /* AuthenticateInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

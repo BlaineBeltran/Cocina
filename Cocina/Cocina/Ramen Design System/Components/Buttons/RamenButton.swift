@@ -1,0 +1,42 @@
+//
+//  RamenButton.swift
+//  Cocina
+//
+//  Created by Blaine Beltran on 2/4/24.
+//
+
+import SwiftUI
+
+enum RamenButtonType {
+    case primaryAction
+    case secondaryAction
+}
+
+struct RamenButton: View {
+    let type: RamenButtonType
+    let text: String
+    let buttonTappedAction: () -> ()
+    
+    init(type: RamenButtonType, text: String, buttonTappedAction: @escaping () -> Void) {
+        self.type = type
+        self.text = text
+        self.buttonTappedAction = buttonTappedAction
+    }
+    
+    var body: some View {
+        Button(action: buttonTappedAction, label: {
+            Text(text)
+                .ramenFont(for: .headingS)
+                .frame(height: 50)
+                .frame(maxWidth: .infinity)
+                .foregroundStyle(type == .primaryAction ? Color.white : Color.background.ramenPrimary)
+                .background(type == .primaryAction ? Color.background.ramenPrimary : Color.clear)
+        })
+        .frame(maxWidth: UIScreen.main.bounds.width - 40)
+        .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
+    }
+}
+
+#Preview {
+    RamenButton(type: .primaryAction, text: "Button", buttonTappedAction: {})
+}

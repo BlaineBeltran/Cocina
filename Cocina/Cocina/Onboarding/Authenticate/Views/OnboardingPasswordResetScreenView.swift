@@ -46,12 +46,16 @@ private extension OnboardingPasswordResetScreenView {
     
     private var sendEmailButton: some View {
         Button(action: {}, label: {
-            Text("Send email")
-                .ramenFont(for: .headingS)
-                .frame(height: 50)
-                .frame(maxWidth: .infinity)
-                .background(Color.background.ramenPrimary)
-                .foregroundStyle(.white)
+            NavigationLink {
+                OnboardingPasswordSentConfirmationScreen()
+            } label: {
+                Text("Send email")
+                    .ramenFont(for: .headingS)
+                    .frame(height: 50)
+                    .frame(maxWidth: .infinity)
+                    .background(Color.background.ramenPrimary)
+                    .foregroundStyle(.white)
+            }
         })
         .frame(maxWidth: 359)
         .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))

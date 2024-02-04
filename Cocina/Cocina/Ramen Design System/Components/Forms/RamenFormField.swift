@@ -17,18 +17,23 @@ struct RamenFormField: View, Identifiable {
     
     var body: some View {
         VStack(alignment: .leading) {
-            Text(headerText)
-                .foregroundStyle(Color.text.primary)
-            if isSecureText {
-                SecureField("", text: text, prompt: Text(placeHolderText).foregroundStyle(Color.text.secondary))
-            } else {
-                TextField("", text: text, prompt: Text(placeHolderText).foregroundStyle(Color.text.secondary))
+            VStack(alignment: .leading, spacing: 1) {
+                Text(headerText)
+                    .foregroundStyle(Color.text.primary)
+                if isSecureText {
+                    SecureField("", text: text, prompt: Text(placeHolderText).foregroundStyle(Color.text.secondary))
+                        .frame(height: 30)
+                } else {
+                    TextField("", text: text, prompt: Text(placeHolderText).foregroundStyle(Color.text.secondary))
+                        .frame(height: 30)
+                }
+
             }
+            .padding(.bottom, 5)
             if showDivider {
                 Divider()
                     .frame(height: 1)
                     .overlay(Color.text.tertiary)
-                    .padding(.top, 10)
             }
         }
         .ramenFont(for: .bodyS)

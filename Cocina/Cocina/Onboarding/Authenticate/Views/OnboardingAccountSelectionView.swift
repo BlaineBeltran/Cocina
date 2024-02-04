@@ -10,6 +10,8 @@ import SwiftUI
 struct OnboardingAccountSelectionView: View {
     @State var presentLogin = false
     @State var presentAccountCreation = false
+    @Environment(\.dismiss) private var dismiss
+    weak var coordinator: OnboardingCoordinator?
     
     var body: some View {
         VStack {
@@ -17,12 +19,17 @@ struct OnboardingAccountSelectionView: View {
             Spacer()
             loginButton
             createAccountButton
+            skipAuthButton
         }
         .sheet(isPresented: $presentLogin, content: {
-            OnboardingLoginScreenView()
+            NavigationStack {
+                OnboardingLoginScreenView()
+            }
         })
         .sheet(isPresented: $presentAccountCreation, content: {
-            OnboardingEnterEmailView()
+            NavigationStack {
+                OnboardingEnterEmailView()
+            }
         })
     }
 }
@@ -65,6 +72,21 @@ extension OnboardingAccountSelectionView {
         .frame(height: 50)
         .background(Color.white)
         .foregroundStyle(Color.background.ramenPrimary)
+        .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
+    }
+    
+    #warning("Remove this button before release!!!")
+    private var skipAuthButton: some View {
+        Button(action: {
+            coordinator?.skipAuth()
+        }, label: {
+            Text("Skip Auth")
+                .ramenFont(for: .headingS)
+        })
+        .frame(maxWidth: 359)
+        .frame(height: 50)
+        .background(Color.warnings.warningRed)
+        .foregroundStyle(.white)
         .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
     }
 }

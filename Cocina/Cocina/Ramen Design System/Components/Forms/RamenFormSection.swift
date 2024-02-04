@@ -16,7 +16,8 @@ struct RamenFormSection: View {
                 field
             }
         }
-        .padding(20)
+        .padding([.leading, .trailing, .top], 20)
+        .padding(.bottom, 15)
         .background {
             RoundedRectangle(cornerRadius: 25, style: .continuous)
                 .foregroundStyle(.white)

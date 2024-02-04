@@ -14,6 +14,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // Set global navigation bar font style
+        UINavigationBar.appearance().largeTitleTextAttributes = [.font: UIFont.ramenFont(for: .headingXL)]
         return true
     }
 
