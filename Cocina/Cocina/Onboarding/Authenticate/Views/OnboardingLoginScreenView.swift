@@ -11,9 +11,6 @@ struct OnboardingLoginScreenView: View {
     @State private var username: String = ""
     @State private var password: String = ""
     
-    var interactor: Authenticateable?
-    var router: AuthenticateRoutable?
-
     var body: some View {
         ZStack {
             Color.background.ramenFormPrimary
@@ -64,10 +61,13 @@ extension OnboardingLoginScreenView {
     
     private var forgotPasswordButton: some View {
         Button(action: {
-            router?.navigateTo(destination: .passwordReset)
         }, label: {
-            Text("Forgot password?")
-                .ramenFont(for: .headingS)
+            NavigationLink {
+                OnboardingPasswordResetScreenView()
+            } label: {
+                Text("Forgot password?")
+                    .ramenFont(for: .headingS)
+            }
         })
         .frame(maxWidth: 359)
         .frame(height: 50)

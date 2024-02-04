@@ -10,6 +10,7 @@ import SwiftUI
 struct OnboardingEnterPasswordView: View {
     @State var password: String = ""
     @State var confirmedPassword: String = ""
+    @Environment(\.dismiss) private var pop
     
     var body: some View {
         ZStack {
@@ -26,6 +27,7 @@ struct OnboardingEnterPasswordView: View {
                 }
             }
         }
+        .navigationBarBackButtonHidden()
     }
 }
 
@@ -52,18 +54,25 @@ private extension OnboardingEnterPasswordView {
     
     private var createAccountButton: some View {
         Button(action: {}, label: {
-            Text("Create account")
-            .padding([.leading, .trailing], 20)
-            .ramenFont(for: .headingS)
-            .frame(height: 50)
-            .background(Color.background.ramenPrimary)
-            .foregroundStyle(.white)
+            NavigationLink {
+                OnboardingGettingReadyView()
+            } label: {
+                Text("Create account")
+                    .padding([.leading, .trailing], 20)
+                    .ramenFont(for: .headingS)
+                    .frame(height: 50)
+                    .background(Color.background.ramenPrimary)
+                    .foregroundStyle(.white)
+            }
         })
         .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
     }
     
     private var backToEmailButton: some View {
-        Button(action: {}, label: {
+        Button(action: {
+            // FIXME: maybe using the new path in iOS 16 is better
+            pop()
+        }, label: {
             Image(systemName: "arrow.left")
             .padding([.leading, .trailing], 20)
             .ramenFont(for: .headingL)

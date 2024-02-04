@@ -48,15 +48,19 @@ private extension OnboardingEnterEmailView {
     
     private func nextButton(parentSize: CGFloat) -> some View {
         Button(action: {}, label: {
-            HStack(spacing: 4) {
-                Text("Next")
-                Image(systemName: "arrow.right")
+            NavigationLink {
+                OnboardingEnterPasswordView()
+            } label: {
+                HStack(spacing: 4) {
+                    Text("Next")
+                    Image(systemName: "arrow.right")
+                }
+                .ramenFont(for: .headingS)
+                .frame(height: 50)
+                .frame(maxWidth: .infinity)
+                .background(Color.background.ramenPrimary)
+                .foregroundStyle(.white)
             }
-            .ramenFont(for: .headingS)
-            .frame(height: 50)
-            .frame(maxWidth: .infinity)
-            .background(Color.background.ramenPrimary)
-            .foregroundStyle(.white)
         })
         .frame(width: 100)
         .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))

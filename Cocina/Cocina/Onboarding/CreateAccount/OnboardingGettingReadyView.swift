@@ -27,6 +27,7 @@ struct OnboardingGettingReadyView: View {
                 }
             }
         }
+        .navigationBarBackButtonHidden()
     }
 }
 

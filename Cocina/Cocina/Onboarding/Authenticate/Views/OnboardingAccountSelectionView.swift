@@ -10,6 +10,8 @@ import SwiftUI
 struct OnboardingAccountSelectionView: View {
     @State var presentLogin = false
     @State var presentAccountCreation = false
+    @Environment(\.dismiss) private var dismiss
+    weak var coordinator: OnboardingCoordinator?
     
     var body: some View {
         VStack {
@@ -17,12 +19,17 @@ struct OnboardingAccountSelectionView: View {
             Spacer()
             loginButton
             createAccountButton
+            skipAuthButton
         }
         .sheet(isPresented: $presentLogin, content: {
-            OnboardingLoginScreenView()
+            NavigationStack {
+                OnboardingLoginScreenView()
+            }
         })
         .sheet(isPresented: $presentAccountCreation, content: {
-            OnboardingEnterEmailView()
+            NavigationStack {
+                OnboardingEnterEmailView()
+            }
         })
     }
 }
@@ -41,30 +48,29 @@ extension OnboardingAccountSelectionView {
             .padding(.top, 50)
     }
     private var loginButton: some View {
-        Button(action: {
+        RamenButton(type: .primaryAction, text: "Login") {
             presentLogin.toggle()
-        }, label: {
-            Text("Login")
-                .ramenFont(for: .headingS)
-        })
-        .frame(maxWidth: 359)
-        .frame(height: 50)
-        .background(Color.background.ramenPrimary)
-        .foregroundStyle(.white)
-        .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
+        }
     }
     
     private var createAccountButton: some View {
-        Button(action: {
+        RamenButton(type: .secondaryAction, text: "Create account") {
             presentAccountCreation.toggle()
+        }
+    }
+    
+    #warning("Remove this button before release!!!")
+    private var skipAuthButton: some View {
+        Button(action: {
+            coordinator?.skipAuth()
         }, label: {
-            Text("Create account")
+            Text("Skip Auth")
                 .ramenFont(for: .headingS)
         })
         .frame(maxWidth: 359)
         .frame(height: 50)
-        .background(Color.white)
-        .foregroundStyle(Color.background.ramenPrimary)
+        .background(Color.warnings.warningRed)
+        .foregroundStyle(.white)
         .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
     }
 }

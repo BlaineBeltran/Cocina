@@ -35,6 +35,7 @@ struct OnboardingPasswordSentConfirmationScreen: View {
                 .padding(.top, 50)
             }
         }
+        .navigationBarBackButtonHidden()
         .onAppear {
             isCheckAnimating.toggle()
         }
@@ -62,7 +63,7 @@ private extension OnboardingPasswordSentConfirmationScreen {
                 .background(Color.background.ramenPrimary)
                 .foregroundStyle(.white)
         })
-        .frame(maxWidth: parentSize - 40)
+        .frame(width: UIScreen.main.bounds.width - 40)
         .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
     }
 }
