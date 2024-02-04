@@ -48,31 +48,15 @@ extension OnboardingAccountSelectionView {
             .padding(.top, 50)
     }
     private var loginButton: some View {
-        Button(action: {
+        RamenButton(type: .primaryAction, text: "Login") {
             presentLogin.toggle()
-        }, label: {
-            Text("Login")
-                .ramenFont(for: .headingS)
-        })
-        .frame(maxWidth: 359)
-        .frame(height: 50)
-        .background(Color.background.ramenPrimary)
-        .foregroundStyle(.white)
-        .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
+        }
     }
     
     private var createAccountButton: some View {
-        Button(action: {
+        RamenButton(type: .secondaryAction, text: "Create account") {
             presentAccountCreation.toggle()
-        }, label: {
-            Text("Create account")
-                .ramenFont(for: .headingS)
-        })
-        .frame(maxWidth: 359)
-        .frame(height: 50)
-        .background(Color.white)
-        .foregroundStyle(Color.background.ramenPrimary)
-        .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
+        }
     }
     
     #warning("Remove this button before release!!!")
