@@ -21,7 +21,7 @@ class HomeCoordinator: Coordinating {
     }
     
     func showSettings() {
-        let settingsViewController = SettingsViewController()
+        let settingsViewController = ProfileViewController()
         navigationController.pushViewController(settingsViewController, animated: true)
     }
 }

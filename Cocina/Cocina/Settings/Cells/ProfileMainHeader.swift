@@ -10,7 +10,7 @@ import SwiftUI
 
 class ProfileMainHeader: UIView {
 
-    let size: CGFloat = 75
+    let size: CGFloat = 95
     let space = UIView(frame: .init(x: 0, y: 0, width: 0, height: 0))
     
     lazy var profilePicture: UIImageView = {

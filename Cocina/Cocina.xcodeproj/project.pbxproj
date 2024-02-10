@@ -39,17 +39,17 @@
 		21DF45AF2B5B279400FE11F5 /* PlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DF45AE2B5B279400FE11F5 /* PlanViewController.swift */; };
 		21DF45B12B5B279F00FE11F5 /* GroceriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DF45B02B5B279F00FE11F5 /* GroceriesViewController.swift */; };
 		21DF45B32B5B27A600FE11F5 /* ChefViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DF45B22B5B27A600FE11F5 /* ChefViewController.swift */; };
-		21DF45B52B5B27AE00FE11F5 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DF45B42B5B27AE00FE11F5 /* SettingsViewController.swift */; };
+		21DF45B52B5B27AE00FE11F5 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DF45B42B5B27AE00FE11F5 /* ProfileViewController.swift */; };
 		21DF45BA2B5C78E200FE11F5 /* OnboardingAccountSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DF45B92B5C78E200FE11F5 /* OnboardingAccountSelectionView.swift */; };
 		21DF45BC2B5DA71400FE11F5 /* RamenColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DF45BB2B5DA71400FE11F5 /* RamenColors.swift */; };
 		21DF45BE2B5DAE1B00FE11F5 /* OnboardingLoginScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DF45BD2B5DAE1B00FE11F5 /* OnboardingLoginScreenView.swift */; };
 		658FC9F12B6450C700FE6D9F /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658FC9F02B6450C700FE6D9F /* EditProfileViewController.swift */; };
-		658FC9F32B6458D000FE6D9F /* EditPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658FC9F22B6458D000FE6D9F /* EditPasswordViewController.swift */; };
 		658FC9F52B64631500FE6D9F /* EditProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658FC9F42B64631500FE6D9F /* EditProfileTableViewCell.swift */; };
 		658FC9F82B646AE900FE6D9F /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 658FC9F72B646AE900FE6D9F /* SnapKit */; };
 		659C9E822B5F224C008E292B /* ProfileMainHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659C9E812B5F224C008E292B /* ProfileMainHeader.swift */; };
 		65FE94FA2B6B076000A093CE /* Extensions+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FE94F92B6B076000A093CE /* Extensions+UIViewController.swift */; };
 		65FE94FD2B6D8B3E00A093CE /* EditProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FE94FC2B6D8B3E00A093CE /* EditProfileHeader.swift */; };
+		65FE94FF2B780BD800A093CE /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FE94FE2B780BD800A093CE /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,16 +105,16 @@
 		21DF45AE2B5B279400FE11F5 /* PlanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanViewController.swift; sourceTree = "<group>"; };
 		21DF45B02B5B279F00FE11F5 /* GroceriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceriesViewController.swift; sourceTree = "<group>"; };
 		21DF45B22B5B27A600FE11F5 /* ChefViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChefViewController.swift; sourceTree = "<group>"; };
-		21DF45B42B5B27AE00FE11F5 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		21DF45B42B5B27AE00FE11F5 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		21DF45B92B5C78E200FE11F5 /* OnboardingAccountSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingAccountSelectionView.swift; sourceTree = "<group>"; };
 		21DF45BB2B5DA71400FE11F5 /* RamenColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RamenColors.swift; sourceTree = "<group>"; };
 		21DF45BD2B5DAE1B00FE11F5 /* OnboardingLoginScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingLoginScreenView.swift; sourceTree = "<group>"; };
 		658FC9F02B6450C700FE6D9F /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
-		658FC9F22B6458D000FE6D9F /* EditPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPasswordViewController.swift; sourceTree = "<group>"; };
 		658FC9F42B64631500FE6D9F /* EditProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileTableViewCell.swift; sourceTree = "<group>"; };
 		659C9E812B5F224C008E292B /* ProfileMainHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileMainHeader.swift; sourceTree = "<group>"; };
 		65FE94F92B6B076000A093CE /* Extensions+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Extensions+UIViewController.swift"; path = "Cocina/Settings/Extensions+UIViewController.swift"; sourceTree = SOURCE_ROOT; };
 		65FE94FC2B6D8B3E00A093CE /* EditProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileHeader.swift; sourceTree = "<group>"; };
+		65FE94FE2B780BD800A093CE /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -381,9 +381,9 @@
 			isa = PBXGroup;
 			children = (
 				65FE94FB2B6D8AF800A093CE /* Cells */,
-				21DF45B42B5B27AE00FE11F5 /* SettingsViewController.swift */,
+				21DF45B42B5B27AE00FE11F5 /* ProfileViewController.swift */,
 				658FC9F02B6450C700FE6D9F /* EditProfileViewController.swift */,
-				658FC9F22B6458D000FE6D9F /* EditPasswordViewController.swift */,
+				65FE94FE2B780BD800A093CE /* SettingsViewController.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -616,18 +616,18 @@
 				213D017D2B6311D600DAA75A /* OnboardingGettingReadyView.swift in Sources */,
 				21B4B0E62B6FEFFF00FD5C6A /* HomeView.swift in Sources */,
 				21DF45BE2B5DAE1B00FE11F5 /* OnboardingLoginScreenView.swift in Sources */,
-				21DF45B52B5B27AE00FE11F5 /* SettingsViewController.swift in Sources */,
+				21DF45B52B5B27AE00FE11F5 /* ProfileViewController.swift in Sources */,
 				213D017F2B63149300DAA75A /* RamenFont.swift in Sources */,
 				213D01772B63092A00DAA75A /* OnboardingEnterEmailView.swift in Sources */,
 				213D01792B630DF200DAA75A /* OnboardingEnterPasswordView.swift in Sources */,
 				21DF45B12B5B279F00FE11F5 /* GroceriesViewController.swift in Sources */,
 				21B4B0DA2B66C3C500FD5C6A /* AuthenticateRouter.swift in Sources */,
+				65FE94FF2B780BD800A093CE /* SettingsViewController.swift in Sources */,
 				21DF45AB2B5B277D00FE11F5 /* ExploreViewController.swift in Sources */,
 				21DF45692B5B250400FE11F5 /* AppDelegate.swift in Sources */,
 				21DF45BC2B5DA71400FE11F5 /* RamenColors.swift in Sources */,
 				213D01732B61C3F200DAA75A /* RamenFormSection.swift in Sources */,
 				21DF45B32B5B27A600FE11F5 /* ChefViewController.swift in Sources */,
-				658FC9F32B6458D000FE6D9F /* EditPasswordViewController.swift in Sources */,
 				21DF45BA2B5C78E200FE11F5 /* OnboardingAccountSelectionView.swift in Sources */,
 				65FE94FA2B6B076000A093CE /* Extensions+UIViewController.swift in Sources */,
 				65FE94FD2B6D8B3E00A093CE /* EditProfileHeader.swift in Sources */,

@@ -13,6 +13,7 @@ enum EditProfile: Int, CaseIterable {
     case rowOne
     case rowTwo
     case rowThree
+    case rowFour
     
     var rowName: String {
         switch self {
@@ -22,6 +23,8 @@ enum EditProfile: Int, CaseIterable {
             return "Username"
         case .rowThree:
             return "Email"
+        case .rowFour:
+            return "Password"
         }
     }
     
@@ -33,6 +36,8 @@ enum EditProfile: Int, CaseIterable {
             return "thisismyusername"
         case .rowThree:
             return "testing123@gmail.com"
+        case .rowFour:
+            return "password"
         }
     }
     
@@ -44,6 +49,8 @@ enum EditProfile: Int, CaseIterable {
             return "Enter your username"
         case .rowThree:
             return "Enter your email address"
+        case .rowFour:
+            return "Enter a new password"
         }
     }
 }
@@ -83,7 +90,7 @@ class EditProfileViewController: UIViewController {
 
 // MARK: TableView
 
-extension EditProfileViewController: UITableViewDataSource, UITableViewDelegate {
+extension EditProfileViewController: UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         EditProfile.allCases.count
     }
@@ -93,11 +100,23 @@ extension EditProfileViewController: UITableViewDataSource, UITableViewDelegate 
         cell.cellTitle.text = EditProfile(rawValue: indexPath.row)?.rowName
         cell.textField.text = EditProfile(rawValue: indexPath.row)?.userData
         cell.textField.placeholder = EditProfile(rawValue: indexPath.row)?.placeholder
+        cell.textField.delegate = self
+        cell.textField.tag = indexPath.row
+        if cell.textField.tag == 3 {
+            cell.textField.isSecureTextEntry = true
+        }
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        // update the user object
+        textField.resignFirstResponder()
+        print(textField.tag)
+        return true
     }
 }
 
