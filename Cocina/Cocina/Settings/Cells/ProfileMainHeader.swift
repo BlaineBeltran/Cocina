@@ -18,7 +18,7 @@ class ProfileMainHeader: UIView {
         imageView.layer.cornerRadius = size / 2
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.clipsToBounds = true
-        imageView.contentMode = .scaleAspectFit
+        imageView.contentMode = .scaleAspectFill
         return imageView
     }()
     
@@ -55,6 +55,7 @@ class ProfileMainHeader: UIView {
         super.init(frame: frame)
         
         configureUI()
+        observeChangesToImage()
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -69,6 +70,18 @@ class ProfileMainHeader: UIView {
         stackView.snp.makeConstraints { make in
             make.top.equalTo(self.snp.top)
             make.leading.trailing.bottom.equalTo(self)
+        }
+    }
+    
+    private func observeChangesToImage() {
+        NotificationCenter.default.addObserver(self, selector: #selector(updateImage(from:)), name: .init("Changed image"), object: nil)
+    }
+    
+    @objc
+    func updateImage(from: NSNotification) {
+        if let info = from.userInfo,
+           let image = info["image"] as? UIImage {
+            profilePicture.image = image
         }
     }
 
