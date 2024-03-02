@@ -9,13 +9,13 @@ import UIKit
 import SwiftUI
 import SnapKit
 
-protocol EditProfileHeaderDelegate {
+protocol EditProfileHeaderDelegate: AnyObject {
     func didTapEditImageButton()
 }
 
 class EditProfileHeader: UIView {
     
-    var delegate: EditProfileHeaderDelegate?
+    weak var delegate: EditProfileHeaderDelegate?
     let size: CGFloat = 95
     lazy var spacer: CGFloat = window?.windowScene?.statusBarManager?.statusBarFrame.height ?? 0.0
     
