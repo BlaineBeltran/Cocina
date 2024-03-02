@@ -202,14 +202,11 @@ extension EditProfileViewController: EditProfileHeaderDelegate, PHPickerViewCont
     // The picker does not dismiss when this method is called so you need to dismiss the picker yourself.
     func picker(_ picker: PHPickerViewController, didFinishPicking results: [PHPickerResult]) {
         
-        if !results.isEmpty {
-            let results = results.first!
-            let itemProvider = results.itemProvider
+        if let result = results.first {
+            let itemProvider = result.itemProvider
             if itemProvider.canLoadObject(ofClass: UIImage.self) {
                 itemProvider.loadObject(ofClass: UIImage.self) { [weak self] image, error in
-                    guard let image = image as? UIImage else {
-                        return
-                    }
+                    guard let image = image as? UIImage else { return }
                     DispatchQueue.main.async {
                         let imageData = ["image": image]
                         NotificationCenter.default.post(name: .init("Changed image"), object: nil, userInfo: imageData)
