@@ -52,6 +52,7 @@ struct tableViewData {
 class ProfileViewController: UIViewController {
     
     let profileHeader = ProfileMainHeader()
+    var coordinator: HomeCoordinator?
     
     let tableView: UITableView = {
         let tableview = UITableView(frame: CGRect.zero, style: .insetGrouped)
@@ -107,13 +108,11 @@ extension ProfileViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        switch indexPath {
-        case [0,0]:
-            let editProfileVC = EditProfileViewController()
-            self.navigationController?.pushViewController(editProfileVC, animated: true)
-        case [1,0]:
-            let settingsVC = SettingsViewController()
-            self.navigationController?.pushViewController(settingsVC, animated: true)
+        switch (indexPath.section, indexPath.row) {
+        case (0,0):
+            coordinator?.showEditProfile()
+        case (1,0):
+            coordinator?.showSettings()
         default:
             break
         }

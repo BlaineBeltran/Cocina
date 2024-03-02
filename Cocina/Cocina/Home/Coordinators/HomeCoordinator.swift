@@ -20,8 +20,25 @@ class HomeCoordinator: Coordinating {
         navigationController.pushViewController(homeViewController, animated: false)
     }
     
+    func showProfile() {
+        let profileViewController = ProfileViewController()
+        profileViewController.coordinator = self
+        navigationController.pushViewController(profileViewController, animated: true)
+    }
+    
+    func showEditProfile() {
+        let editProfileViewController = EditProfileViewController()
+        navigationController.pushViewController(editProfileViewController, animated: true)
+    }
+    
     func showSettings() {
-        let settingsViewController = ProfileViewController()
+        let settingsViewController = SettingsViewController()
+        settingsViewController.coordinator = self
         navigationController.pushViewController(settingsViewController, animated: true)
+    }
+    
+    func showSync() {
+        let syncViewController = SyncViewController()
+        navigationController.pushViewController(syncViewController, animated: true)
     }
 }

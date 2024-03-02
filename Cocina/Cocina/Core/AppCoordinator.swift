@@ -56,10 +56,7 @@ class AppCoordinator: Coordinating {
         setupPlan()
         setupGroceries()
         
-        guard let windowScene = (window?.windowScene as? UIWindowScene) else { return }
-        window = UIWindow(windowScene: windowScene)
         window?.rootViewController = tabBarController
-        window?.makeKeyAndVisible()
     }
     
     private func setupOnboarding() {

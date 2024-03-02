@@ -8,6 +8,7 @@
 import UIKit
 import SnapKit
 import PhotosUI
+import SwiftUI
 
 enum EditProfile: Int, CaseIterable {
     case rowOne
@@ -65,6 +66,22 @@ class EditProfileViewController: UIViewController {
         tableView.estimatedRowHeight = UITableView.automaticDimension
         return tableView
     }()
+    
+    lazy var containerView: UIView = {
+        let containerView = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: 100))
+        return containerView
+    }()
+    
+    lazy var deleteAccountButton: UIView = {
+        let deleteAccountButton = RamenButton(type: .secondaryAction, text: "Delete Account") {
+            print("tapped")
+            // uialert controller sheet style
+        }
+        let host = UIHostingController(rootView: deleteAccountButton)
+        host.view.backgroundColor = .clear
+        let buttonAsUIView = host.view!
+        return buttonAsUIView
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -73,17 +90,27 @@ class EditProfileViewController: UIViewController {
         tableView.delegate = self
         profilePictureHeader.delegate = self
         configureUI()
+        tableView.tableFooterView = containerView
+        
+        view.backgroundColor = .blue
     }
     
     private func configureUI() {
         view.addSubview(profilePictureHeader)
         view.addSubview(tableView)
+        containerView.addSubview(deleteAccountButton)
+        
         profilePictureHeader.snp.makeConstraints { make in
             make.top.leading.trailing.equalTo(view)
         }
         tableView.snp.makeConstraints { make in
             make.top.equalTo(profilePictureHeader.snp.bottom)
-            make.leading.bottom.trailing.equalToSuperview()
+            make.leading.trailing.bottom.equalToSuperview()
+        }
+        deleteAccountButton.snp.makeConstraints { make in
+            make.leading.trailing.equalToSuperview()
+            make.height.equalTo(45)
+            make.centerY.equalToSuperview()
         }
     }
 }

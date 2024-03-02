@@ -47,9 +47,11 @@
 		658FC9F52B64631500FE6D9F /* EditProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658FC9F42B64631500FE6D9F /* EditProfileTableViewCell.swift */; };
 		658FC9F82B646AE900FE6D9F /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 658FC9F72B646AE900FE6D9F /* SnapKit */; };
 		659C9E822B5F224C008E292B /* ProfileMainHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659C9E812B5F224C008E292B /* ProfileMainHeader.swift */; };
+		65EE87C32B8152DD001E3EA5 /* SyncViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EE87C22B8152DC001E3EA5 /* SyncViewController.swift */; };
 		65FE94FA2B6B076000A093CE /* Extensions+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FE94F92B6B076000A093CE /* Extensions+UIViewController.swift */; };
 		65FE94FD2B6D8B3E00A093CE /* EditProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FE94FC2B6D8B3E00A093CE /* EditProfileHeader.swift */; };
 		65FE94FF2B780BD800A093CE /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FE94FE2B780BD800A093CE /* SettingsViewController.swift */; };
+		65FE95012B7ACA7E00A093CE /* ToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FE95002B7ACA7E00A093CE /* ToggleButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,9 +114,11 @@
 		658FC9F02B6450C700FE6D9F /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		658FC9F42B64631500FE6D9F /* EditProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileTableViewCell.swift; sourceTree = "<group>"; };
 		659C9E812B5F224C008E292B /* ProfileMainHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileMainHeader.swift; sourceTree = "<group>"; };
+		65EE87C22B8152DC001E3EA5 /* SyncViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncViewController.swift; sourceTree = "<group>"; };
 		65FE94F92B6B076000A093CE /* Extensions+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Extensions+UIViewController.swift"; path = "Cocina/Settings/Extensions+UIViewController.swift"; sourceTree = SOURCE_ROOT; };
 		65FE94FC2B6D8B3E00A093CE /* EditProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileHeader.swift; sourceTree = "<group>"; };
 		65FE94FE2B780BD800A093CE /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		65FE95002B7ACA7E00A093CE /* ToggleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -384,6 +388,7 @@
 				21DF45B42B5B27AE00FE11F5 /* ProfileViewController.swift */,
 				658FC9F02B6450C700FE6D9F /* EditProfileViewController.swift */,
 				65FE94FE2B780BD800A093CE /* SettingsViewController.swift */,
+				65EE87C22B8152DC001E3EA5 /* SyncViewController.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -455,6 +460,7 @@
 				659C9E812B5F224C008E292B /* ProfileMainHeader.swift */,
 				65FE94FC2B6D8B3E00A093CE /* EditProfileHeader.swift */,
 				658FC9F42B64631500FE6D9F /* EditProfileTableViewCell.swift */,
+				65FE95002B7ACA7E00A093CE /* ToggleButton.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -620,7 +626,9 @@
 				213D017F2B63149300DAA75A /* RamenFont.swift in Sources */,
 				213D01772B63092A00DAA75A /* OnboardingEnterEmailView.swift in Sources */,
 				213D01792B630DF200DAA75A /* OnboardingEnterPasswordView.swift in Sources */,
+				65FE95012B7ACA7E00A093CE /* ToggleButton.swift in Sources */,
 				21DF45B12B5B279F00FE11F5 /* GroceriesViewController.swift in Sources */,
+				65EE87C32B8152DD001E3EA5 /* SyncViewController.swift in Sources */,
 				21B4B0DA2B66C3C500FD5C6A /* AuthenticateRouter.swift in Sources */,
 				65FE94FF2B780BD800A093CE /* SettingsViewController.swift in Sources */,
 				21DF45AB2B5B277D00FE11F5 /* ExploreViewController.swift in Sources */,
