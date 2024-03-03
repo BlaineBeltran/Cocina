@@ -12,8 +12,9 @@ struct ToggleButton: View {
     
     var body: some View {
         Toggle(isOn: $isOn) { }
-        .toggleStyle(SwitchToggleStyle(tint: .pink))
+        .toggleStyle(SwitchToggleStyle(tint: Color.background.ramenPrimary))
         .labelsHidden()
+        .padding(.trailing, 20)
     }
 }
 

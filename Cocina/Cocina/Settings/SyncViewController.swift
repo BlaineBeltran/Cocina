@@ -55,7 +55,8 @@ extension SyncViewController: UITableViewDelegate, UITableViewDataSource {
         content.image = UIImage(systemName: "icloud")
         content.imageProperties.tintColor = .background.ramenPrimary
         content.secondaryAttributedText = NSAttributedString(string: "When turned on, information is safely stored in iCloud and automatically kept in sync across all your devices.", attributes: [.font: UIFont.ramenFont(for: .bodyS)])
-        //content.secondaryText = "When turned on, information is safely stored in iCloud and automatically kept in sync across all your devices."
+        content.secondaryTextProperties.lineBreakMode = .byWordWrapping
+        content.directionalLayoutMargins.trailing = 40
         content.textToSecondaryTextVerticalPadding = 10
         cell.contentConfiguration = content
         return cell
