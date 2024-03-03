@@ -2,12 +2,14 @@
 //  SettingsViewController.swift
 //  Cocina
 //
-//  Created by Blaine Beltran on 1/19/24.
+//  Created by Andrea Jimenez on 2/10/24.
 //
 
 import UIKit
+import SnapKit
+import SwiftUI
 
-enum ProfileSections: Int, CaseIterable {
+enum SettingsSections: Int, CaseIterable {
     case sectionOne
     case sectionTwo
     case sectionThree
@@ -15,35 +17,34 @@ enum ProfileSections: Int, CaseIterable {
     var rowName: [String] {
         switch self {
         case .sectionOne:
-            return ["Edit Profile", "Change Password"]
+            return ["Dark Mode", "Calendar Start Date"]
         case .sectionTwo:
-            return ["Settings"]
+            return ["Sync"]
         case .sectionThree:
-            return ["Privacy Policy", "Help"]
+            return ["Connect Other Apps"]
         }
     }
     
     var rowIcon: [UIImage] {
         switch self {
         case .sectionOne:
-            return [UIImage(systemName: "person")!, UIImage(systemName: "lock")!]
+            return [UIImage(systemName: "moon")!, UIImage(systemName: "calendar")!]
         case .sectionTwo:
-            return [UIImage(systemName: "gearshape")!]
+            return [UIImage(systemName: "cloud")!]
         case .sectionThree:
-            return [UIImage(systemName: "lock")!, UIImage(systemName: "questionmark.circle")!]
+            return [UIImage(systemName: "link")!]
         }
     }
 }
 
-struct tableViewData {
-    let section: ProfileSections?
+struct settingsTableViewData {
+    let section: SettingsSections?
     
     var rows: Int {
         switch section {
-        case .sectionOne:
-            return 2
+        case .sectionOne: return 2
         case .sectionTwo: return 1
-        case .sectionThree: return 2
+        case .sectionThree: return 1
         case .none:
             return 0
         }
@@ -52,7 +53,7 @@ struct tableViewData {
 
 class SettingsViewController: UIViewController {
     
-    let profileHeader = ProfileMainHeader()
+    var coordinator: HomeCoordinator?
     
     let tableView: UITableView = {
         let tableview = UITableView(frame: CGRect.zero, style: .insetGrouped)
@@ -60,64 +61,94 @@ class SettingsViewController: UIViewController {
         tableview.isScrollEnabled = false
         return tableview
     }()
+    
+    lazy var calendarMenuButton: UIButton = {
+        let calendarMenuButton = UIButton(primaryAction: nil)
+        calendarMenuButton.tintColor = .background.ramenPrimary
+        calendarMenuButton.titleLabel?.textAlignment = .right
+        calendarMenuButton.menu = UIMenu(children: [
+            UIAction(title: "Sunday", handler: {_ in
+                print(self.calendarMenuButton.frame)
+            }),
+            UIAction(title: "Monday", handler: {_ in
+                // Handler is being called on main thread so we don't
+                // need to dispatch work to main queue
+                self.calendarMenuButton.sizeToFit()
+            })
+        ])
+        calendarMenuButton.showsMenuAsPrimaryAction = true
+        calendarMenuButton.changesSelectionAsPrimaryAction = true
+        calendarMenuButton.sizeToFit()
+        return calendarMenuButton
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        tableView.dataSource = self
+
         tableView.delegate = self
+        tableView.dataSource = self
+        title = "Settings"
         configureUI()
     }
     
     private func configureUI() {
-        view.addSubview(profileHeader)
         view.addSubview(tableView)
-        profileHeader.snp.makeConstraints { make in
-            make.top.leading.trailing.equalTo(view)
-        }
         tableView.snp.makeConstraints { make in
-            make.top.equalTo(profileHeader.snp.bottom)
-            make.leading.bottom.trailing.equalToSuperview()
+            make.leading.top.trailing.bottom.equalTo(view)
         }
     }
 }
 
-extension SettingsViewController: UITableViewDataSource, UITableViewDelegate {
+extension SettingsViewController: UITableViewDelegate, UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
-        ProfileSections.allCases.count
+        SettingsSections.allCases.count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        guard let section = ProfileSections(rawValue: section) else { return 0 }
-        let sectionViewModel = tableViewData(section: section)
+        guard let section = SettingsSections(rawValue: section) else { return 0 }
+        let sectionViewModel = settingsTableViewData(section: section)
         return sectionViewModel.rows
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as UITableViewCell
-        cell.accessoryType = .disclosureIndicator
-        cell.accessoryView?.backgroundColor = .systemPink
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        // Content configuration
         var content = cell.defaultContentConfiguration()
-        let rowName = ProfileSections(rawValue: indexPath.section)?.rowName[indexPath.row]
-        content.text = rowName
-        let rowIcon = ProfileSections(rawValue: indexPath.section)?.rowIcon[indexPath.row]
-        content.image = rowIcon
+        content.text = SettingsSections(rawValue: indexPath.section)?.rowName[indexPath.row]
+        content.image = SettingsSections(rawValue: indexPath.section)?.rowIcon[indexPath.row]
         content.imageProperties.tintColor = .background.ramenPrimary
         cell.contentConfiguration = content
+        
+        // Accessory
+        switch (indexPath.section, indexPath.row) {
+        case(0,0):
+            // If you are going to have buttons on cell, create the illusion that tapping on a cell does nothing.
+            cell.selectionStyle = .none
+            let swiftUIToggleButton = ToggleButton()
+            let host = UIHostingController(rootView: swiftUIToggleButton)
+            host.view.frame = CGRect(x: 0, y: 0, width: 20, height: 20)
+            // hides the square frame when clicking on cell
+            host.view.backgroundColor = .clear
+            cell.accessoryView = host.view
+        case(0,1):
+            // If you are going to have buttons on cell, create the illusion that tapping on a cell does nothing.
+            cell.selectionStyle = .none
+            cell.accessoryView = calendarMenuButton
+        default:
+            cell.accessoryType = .disclosureIndicator
+        }
+        
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        switch indexPath {
-        case [0,0]:
-            let editProfileVC = EditProfileViewController()
-            self.navigationController?.pushViewController(editProfileVC, animated: true)
-        case [0,1]:
-            let editPasswordVC = EditPasswordViewController()
-            self.navigationController?.pushViewController(editPasswordVC, animated: true)
+        switch (indexPath.section, indexPath.row) {
+        case (1,0):
+            coordinator?.showSync()
         default:
             break
         }
     }
+    
 }

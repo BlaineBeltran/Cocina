@@ -33,7 +33,7 @@ struct HomeView: View {
 
 extension HomeView {
     private var dismissAction: () -> () {
-        return { coordinator?.showSettings() }
+        return { coordinator?.showProfile() }
     }
     
     private var navigationBar: some View {

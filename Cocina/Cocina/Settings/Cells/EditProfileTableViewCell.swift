@@ -46,7 +46,7 @@ class EditProfileTableViewCell: UITableViewCell {
     }
 
     private func configureUI() {
-        /// Discusssion:  Adding subview to ContentView vs TableViewCell directly
+        /// Discussion:  Adding subview to ContentView vs TableViewCell directly
         /// The content view is resized automatically.
         contentView.addSubview(cellTitle)
         contentView.addSubview(textField)
