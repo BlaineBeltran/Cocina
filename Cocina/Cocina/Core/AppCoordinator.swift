@@ -56,7 +56,9 @@ class AppCoordinator: Coordinating {
         setupPlan()
         setupGroceries()
         
-        window?.rootViewController = tabBarController
+        UIView.transition(with: window!, duration: 0.3, options: .transitionCrossDissolve) {
+            self.window?.rootViewController = self.tabBarController
+        }
     }
     
     private func setupOnboarding() {

@@ -13,8 +13,7 @@
 		213D01702B60750300DAA75A /* check.json in Resources */ = {isa = PBXBuildFile; fileRef = 213D016F2B60750300DAA75A /* check.json */; };
 		213D01732B61C3F200DAA75A /* RamenFormSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213D01722B61C3F200DAA75A /* RamenFormSection.swift */; };
 		213D01752B61C40300DAA75A /* RamenFormField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213D01742B61C40300DAA75A /* RamenFormField.swift */; };
-		213D01772B63092A00DAA75A /* OnboardingEnterEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213D01762B63092A00DAA75A /* OnboardingEnterEmailView.swift */; };
-		213D01792B630DF200DAA75A /* OnboardingEnterPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213D01782B630DF200DAA75A /* OnboardingEnterPasswordView.swift */; };
+		213D01772B63092A00DAA75A /* OnboardingEnterAccountInfoFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213D01762B63092A00DAA75A /* OnboardingEnterAccountInfoFormView.swift */; };
 		213D017B2B6311B200DAA75A /* loadingSpinner.json in Resources */ = {isa = PBXBuildFile; fileRef = 213D017A2B6311B200DAA75A /* loadingSpinner.json */; };
 		213D017D2B6311D600DAA75A /* OnboardingGettingReadyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213D017C2B6311D600DAA75A /* OnboardingGettingReadyView.swift */; };
 		213D017F2B63149300DAA75A /* RamenFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213D017E2B63149300DAA75A /* RamenFont.swift */; };
@@ -27,6 +26,19 @@
 		21B4B0E92B700AF900FD5C6A /* RamenButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B4B0E82B700AF900FD5C6A /* RamenButton.swift */; };
 		21B4B0EC2B700E0E00FD5C6A /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B4B0EB2B700E0E00FD5C6A /* HomeCoordinator.swift */; };
 		21B4B0EF2B7012BA00FD5C6A /* RamenContentFittingDetent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B4B0EE2B7012BA00FD5C6A /* RamenContentFittingDetent.swift */; };
+		21B4B0FA2B72E3EF00FD5C6A /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 21B4B0F92B72E3EF00FD5C6A /* FirebaseAuth */; };
+		21B4B0FC2B72E3EF00FD5C6A /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 21B4B0FB2B72E3EF00FD5C6A /* FirebaseFirestore */; };
+		21B4B0FE2B72E3EF00FD5C6A /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 21B4B0FD2B72E3EF00FD5C6A /* FirebaseFirestoreSwift */; };
+		21B4B1002B756D4400FD5C6A /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B4B0FF2B756D4400FD5C6A /* AuthenticationManager.swift */; };
+		21B4B1042B756EA500FD5C6A /* CocinaUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B4B1032B756EA500FD5C6A /* CocinaUser.swift */; };
+		21B4B1072B77F4F400FD5C6A /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 21B4B1062B77F4F400FD5C6A /* Realm */; };
+		21B4B1092B77F4F400FD5C6A /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 21B4B1082B77F4F400FD5C6A /* RealmSwift */; };
+		21B4B10C2B7AC9AD00FD5C6A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 21B4B10B2B7AC9AD00FD5C6A /* GoogleService-Info.plist */; };
+		21B4B10E2B811D9500FD5C6A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B4B10D2B811D9500FD5C6A /* Constants.swift */; };
+		21B4B1102B811DA500FD5C6A /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 21B4B10F2B811DA500FD5C6A /* Localizable.xcstrings */; };
+		21B4B1122B8123B700FD5C6A /* PasswordRequirement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B4B1112B8123B700FD5C6A /* PasswordRequirement.swift */; };
+		21B4B1142B812A8100FD5C6A /* CreateAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B4B1132B812A8100FD5C6A /* CreateAccountViewModel.swift */; };
+		21D7C6EF2B951B24005E9BA3 /* WhiteLoadingSpinner.lottie in Resources */ = {isa = PBXBuildFile; fileRef = 21D7C6EE2B951B24005E9BA3 /* WhiteLoadingSpinner.lottie */; };
 		21DF45692B5B250400FE11F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DF45682B5B250400FE11F5 /* AppDelegate.swift */; };
 		21DF456B2B5B250400FE11F5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DF456A2B5B250400FE11F5 /* SceneDelegate.swift */; };
 		21DF45722B5B250600FE11F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21DF45712B5B250600FE11F5 /* Assets.xcassets */; };
@@ -42,7 +54,7 @@
 		21DF45B52B5B27AE00FE11F5 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DF45B42B5B27AE00FE11F5 /* ProfileViewController.swift */; };
 		21DF45BA2B5C78E200FE11F5 /* OnboardingAccountSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DF45B92B5C78E200FE11F5 /* OnboardingAccountSelectionView.swift */; };
 		21DF45BC2B5DA71400FE11F5 /* RamenColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DF45BB2B5DA71400FE11F5 /* RamenColors.swift */; };
-		21DF45BE2B5DAE1B00FE11F5 /* OnboardingLoginScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DF45BD2B5DAE1B00FE11F5 /* OnboardingLoginScreenView.swift */; };
+		21DF45BE2B5DAE1B00FE11F5 /* OnboardingEnterEmailAndPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DF45BD2B5DAE1B00FE11F5 /* OnboardingEnterEmailAndPasswordView.swift */; };
 		658FC9F12B6450C700FE6D9F /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658FC9F02B6450C700FE6D9F /* EditProfileViewController.swift */; };
 		658FC9F52B64631500FE6D9F /* EditProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658FC9F42B64631500FE6D9F /* EditProfileTableViewCell.swift */; };
 		658FC9F82B646AE900FE6D9F /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 658FC9F72B646AE900FE6D9F /* SnapKit */; };
@@ -78,8 +90,7 @@
 		213D016F2B60750300DAA75A /* check.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = check.json; sourceTree = "<group>"; };
 		213D01722B61C3F200DAA75A /* RamenFormSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RamenFormSection.swift; sourceTree = "<group>"; };
 		213D01742B61C40300DAA75A /* RamenFormField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RamenFormField.swift; sourceTree = "<group>"; };
-		213D01762B63092A00DAA75A /* OnboardingEnterEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingEnterEmailView.swift; sourceTree = "<group>"; };
-		213D01782B630DF200DAA75A /* OnboardingEnterPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingEnterPasswordView.swift; sourceTree = "<group>"; };
+		213D01762B63092A00DAA75A /* OnboardingEnterAccountInfoFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingEnterAccountInfoFormView.swift; sourceTree = "<group>"; };
 		213D017A2B6311B200DAA75A /* loadingSpinner.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loadingSpinner.json; sourceTree = "<group>"; };
 		213D017C2B6311D600DAA75A /* OnboardingGettingReadyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingGettingReadyView.swift; sourceTree = "<group>"; };
 		213D017E2B63149300DAA75A /* RamenFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RamenFont.swift; sourceTree = "<group>"; };
@@ -92,6 +103,15 @@
 		21B4B0E82B700AF900FD5C6A /* RamenButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RamenButton.swift; sourceTree = "<group>"; };
 		21B4B0EB2B700E0E00FD5C6A /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		21B4B0EE2B7012BA00FD5C6A /* RamenContentFittingDetent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RamenContentFittingDetent.swift; sourceTree = "<group>"; };
+		21B4B0FF2B756D4400FD5C6A /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
+		21B4B1032B756EA500FD5C6A /* CocinaUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocinaUser.swift; sourceTree = "<group>"; };
+		21B4B10A2B77FE5400FD5C6A /* Cocina.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Cocina.entitlements; sourceTree = "<group>"; };
+		21B4B10B2B7AC9AD00FD5C6A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		21B4B10D2B811D9500FD5C6A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		21B4B10F2B811DA500FD5C6A /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		21B4B1112B8123B700FD5C6A /* PasswordRequirement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordRequirement.swift; sourceTree = "<group>"; };
+		21B4B1132B812A8100FD5C6A /* CreateAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewModel.swift; sourceTree = "<group>"; };
+		21D7C6EE2B951B24005E9BA3 /* WhiteLoadingSpinner.lottie */ = {isa = PBXFileReference; lastKnownFileType = file; path = WhiteLoadingSpinner.lottie; sourceTree = "<group>"; };
 		21DF45652B5B250400FE11F5 /* Cocina.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cocina.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21DF45682B5B250400FE11F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		21DF456A2B5B250400FE11F5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -111,7 +131,7 @@
 		21DF45B42B5B27AE00FE11F5 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		21DF45B92B5C78E200FE11F5 /* OnboardingAccountSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingAccountSelectionView.swift; sourceTree = "<group>"; };
 		21DF45BB2B5DA71400FE11F5 /* RamenColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RamenColors.swift; sourceTree = "<group>"; };
-		21DF45BD2B5DAE1B00FE11F5 /* OnboardingLoginScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingLoginScreenView.swift; sourceTree = "<group>"; };
+		21DF45BD2B5DAE1B00FE11F5 /* OnboardingEnterEmailAndPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingEnterEmailAndPasswordView.swift; sourceTree = "<group>"; };
 		658FC9F02B6450C700FE6D9F /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		658FC9F42B64631500FE6D9F /* EditProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileTableViewCell.swift; sourceTree = "<group>"; };
 		659C9E812B5F224C008E292B /* ProfileMainHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileMainHeader.swift; sourceTree = "<group>"; };
@@ -128,7 +148,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21B4B1072B77F4F400FD5C6A /* Realm in Frameworks */,
+				21B4B0FE2B72E3EF00FD5C6A /* FirebaseFirestoreSwift in Frameworks */,
+				21B4B1092B77F4F400FD5C6A /* RealmSwift in Frameworks */,
 				658FC9F82B646AE900FE6D9F /* SnapKit in Frameworks */,
+				21B4B0FC2B72E3EF00FD5C6A /* FirebaseFirestore in Frameworks */,
+				21B4B0FA2B72E3EF00FD5C6A /* FirebaseAuth in Frameworks */,
 				213D016D2B60746400DAA75A /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -153,6 +178,7 @@
 		213D016E2B6074EF00DAA75A /* Lottie Animations */ = {
 			isa = PBXGroup;
 			children = (
+				21D7C6EE2B951B24005E9BA3 /* WhiteLoadingSpinner.lottie */,
 				213D017A2B6311B200DAA75A /* loadingSpinner.json */,
 				213D016F2B60750300DAA75A /* check.json */,
 			);
@@ -172,9 +198,10 @@
 		213D01812B64595300DAA75A /* CreateAccount */ = {
 			isa = PBXGroup;
 			children = (
-				213D01762B63092A00DAA75A /* OnboardingEnterEmailView.swift */,
-				213D01782B630DF200DAA75A /* OnboardingEnterPasswordView.swift */,
+				213D01762B63092A00DAA75A /* OnboardingEnterAccountInfoFormView.swift */,
 				213D017C2B6311D600DAA75A /* OnboardingGettingReadyView.swift */,
+				21B4B1112B8123B700FD5C6A /* PasswordRequirement.swift */,
+				21B4B1132B812A8100FD5C6A /* CreateAccountViewModel.swift */,
 			);
 			path = CreateAccount;
 			sourceTree = "<group>";
@@ -184,6 +211,7 @@
 			children = (
 				21B4B0D92B66C3C500FD5C6A /* AuthenticateRouter.swift */,
 				213D01862B645AD400DAA75A /* Views */,
+				21B4B0FF2B756D4400FD5C6A /* AuthenticationManager.swift */,
 			);
 			path = Authenticate;
 			sourceTree = "<group>";
@@ -200,7 +228,7 @@
 			isa = PBXGroup;
 			children = (
 				21DF45B92B5C78E200FE11F5 /* OnboardingAccountSelectionView.swift */,
-				21DF45BD2B5DAE1B00FE11F5 /* OnboardingLoginScreenView.swift */,
+				21DF45BD2B5DAE1B00FE11F5 /* OnboardingEnterEmailAndPasswordView.swift */,
 				213D01672B5F19B200DAA75A /* OnboardingPasswordResetScreenView.swift */,
 				213D01692B606A8600DAA75A /* OnboardingPasswordSentConfirmationScreen.swift */,
 			);
@@ -218,6 +246,7 @@
 		21B4B0E02B6D903100FD5C6A /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				21B4B1012B756E8C00FD5C6A /* Models */,
 				21B4B0E12B6D904900FD5C6A /* AppCoordinator.swift */,
 			);
 			path = Core;
@@ -247,6 +276,14 @@
 			path = Detents;
 			sourceTree = "<group>";
 		};
+		21B4B1012B756E8C00FD5C6A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				21B4B1032B756EA500FD5C6A /* CocinaUser.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		21DF455C2B5B250400FE11F5 = {
 			isa = PBXGroup;
 			children = (
@@ -270,6 +307,7 @@
 		21DF45672B5B250400FE11F5 /* Cocina */ = {
 			isa = PBXGroup;
 			children = (
+				21B4B10A2B77FE5400FD5C6A /* Cocina.entitlements */,
 				21B4B0E02B6D903100FD5C6A /* Core */,
 				21DF45992B5B258900FE11F5 /* Onboarding */,
 				21DF459A2B5B25C600FE11F5 /* Home */,
@@ -289,6 +327,9 @@
 				21DF45712B5B250600FE11F5 /* Assets.xcassets */,
 				21DF45732B5B250600FE11F5 /* LaunchScreen.storyboard */,
 				21DF45762B5B250600FE11F5 /* Info.plist */,
+				21B4B10B2B7AC9AD00FD5C6A /* GoogleService-Info.plist */,
+				21B4B10D2B811D9500FD5C6A /* Constants.swift */,
+				21B4B10F2B811DA500FD5C6A /* Localizable.xcstrings */,
 			);
 			path = Cocina;
 			sourceTree = "<group>";
@@ -487,6 +528,11 @@
 			packageProductDependencies = (
 				658FC9F72B646AE900FE6D9F /* SnapKit */,
 				213D016C2B60746400DAA75A /* Lottie */,
+				21B4B0F92B72E3EF00FD5C6A /* FirebaseAuth */,
+				21B4B0FB2B72E3EF00FD5C6A /* FirebaseFirestore */,
+				21B4B0FD2B72E3EF00FD5C6A /* FirebaseFirestoreSwift */,
+				21B4B1062B77F4F400FD5C6A /* Realm */,
+				21B4B1082B77F4F400FD5C6A /* RealmSwift */,
 			);
 			productName = Cocina;
 			productReference = 21DF45652B5B250400FE11F5 /* Cocina.app */;
@@ -563,6 +609,8 @@
 			packageReferences = (
 				658FC9F62B646AE900FE6D9F /* XCRemoteSwiftPackageReference "SnapKit" */,
 				213D016B2B60746400DAA75A /* XCRemoteSwiftPackageReference "lottie-spm" */,
+				21B4B0F82B72E3EF00FD5C6A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				21B4B1052B77F4F400FD5C6A /* XCRemoteSwiftPackageReference "realm-swift" */,
 			);
 			productRefGroup = 21DF45662B5B250400FE11F5 /* Products */;
 			projectDirPath = "";
@@ -582,8 +630,11 @@
 			files = (
 				21DF45752B5B250600FE11F5 /* LaunchScreen.storyboard in Resources */,
 				213D01702B60750300DAA75A /* check.json in Resources */,
+				21B4B1102B811DA500FD5C6A /* Localizable.xcstrings in Resources */,
+				21B4B10C2B7AC9AD00FD5C6A /* GoogleService-Info.plist in Resources */,
 				21DF45722B5B250600FE11F5 /* Assets.xcassets in Resources */,
 				213D017B2B6311B200DAA75A /* loadingSpinner.json in Resources */,
+				21D7C6EF2B951B24005E9BA3 /* WhiteLoadingSpinner.lottie in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -612,6 +663,8 @@
 				21B4B0DF2B6D8E8300FD5C6A /* OnboardingCoordinator.swift in Sources */,
 				658FC9F52B64631500FE6D9F /* EditProfileTableViewCell.swift in Sources */,
 				21B4B0EF2B7012BA00FD5C6A /* RamenContentFittingDetent.swift in Sources */,
+				21B4B1142B812A8100FD5C6A /* CreateAccountViewModel.swift in Sources */,
+				21B4B1122B8123B700FD5C6A /* PasswordRequirement.swift in Sources */,
 				21B4B0EC2B700E0E00FD5C6A /* HomeCoordinator.swift in Sources */,
 				213D01752B61C40300DAA75A /* RamenFormField.swift in Sources */,
 				659C9E822B5F224C008E292B /* ProfileMainHeader.swift in Sources */,
@@ -624,16 +677,20 @@
 				21B4B0E42B6EEC4400FD5C6A /* RamenDescriptionField.swift in Sources */,
 				213D017D2B6311D600DAA75A /* OnboardingGettingReadyView.swift in Sources */,
 				21B4B0E62B6FEFFF00FD5C6A /* HomeView.swift in Sources */,
-				21DF45BE2B5DAE1B00FE11F5 /* OnboardingLoginScreenView.swift in Sources */,
+				21DF45BE2B5DAE1B00FE11F5 /* OnboardingEnterEmailAndPasswordView.swift in Sources */,
+				21DF45B52B5B27AE00FE11F5 /* ProfileViewController.swift in Sources */,
+				21DF45BE2B5DAE1B00FE11F5 /* OnboardingEnterEmailAndPasswordView.swift in Sources */,
 				21DF45B52B5B27AE00FE11F5 /* ProfileViewController.swift in Sources */,
 				213D017F2B63149300DAA75A /* RamenFont.swift in Sources */,
-				213D01772B63092A00DAA75A /* OnboardingEnterEmailView.swift in Sources */,
+				21B4B1042B756EA500FD5C6A /* CocinaUser.swift in Sources */,
+				213D01772B63092A00DAA75A /* OnboardingEnterAccountInfoFormView.swift in Sources */,
+				213D01772B63092A00DAA75A /* OnboardingEnterAccountInfoFormView.swift in Sources */,
 				65EE87C52B95131E001E3EA5 /* TitleDetailTableViewCell.swift in Sources */,
-				213D01792B630DF200DAA75A /* OnboardingEnterPasswordView.swift in Sources */,
 				65FE95012B7ACA7E00A093CE /* ToggleButton.swift in Sources */,
 				21DF45B12B5B279F00FE11F5 /* GroceriesViewController.swift in Sources */,
 				65EE87C32B8152DD001E3EA5 /* SyncViewController.swift in Sources */,
 				21B4B0DA2B66C3C500FD5C6A /* AuthenticateRouter.swift in Sources */,
+				21B4B1002B756D4400FD5C6A /* AuthenticationManager.swift in Sources */,
 				65FE94FF2B780BD800A093CE /* SettingsViewController.swift in Sources */,
 				21DF45AB2B5B277D00FE11F5 /* ExploreViewController.swift in Sources */,
 				21DF45692B5B250400FE11F5 /* AppDelegate.swift in Sources */,
@@ -644,6 +701,7 @@
 				65FE94FA2B6B076000A093CE /* Extensions+UIViewController.swift in Sources */,
 				65FE94FD2B6D8B3E00A093CE /* EditProfileHeader.swift in Sources */,
 				21DF45AF2B5B279400FE11F5 /* PlanViewController.swift in Sources */,
+				21B4B10E2B811D9500FD5C6A /* Constants.swift in Sources */,
 				21DF456B2B5B250400FE11F5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -696,7 +754,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -759,7 +817,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -816,9 +874,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Cocina/Cocina.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = GP3JFMJA3W;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Cocina/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -843,9 +902,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Cocina/Cocina.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = GP3JFMJA3W;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Cocina/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -991,6 +1051,22 @@
 				minimumVersion = 4.4.0;
 			};
 		};
+		21B4B0F82B72E3EF00FD5C6A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.21.0;
+			};
+		};
+		21B4B1052B77F4F400FD5C6A /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.46.0;
+			};
+		};
 		658FC9F62B646AE900FE6D9F /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
@@ -1006,6 +1082,31 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 213D016B2B60746400DAA75A /* XCRemoteSwiftPackageReference "lottie-spm" */;
 			productName = Lottie;
+		};
+		21B4B0F92B72E3EF00FD5C6A /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 21B4B0F82B72E3EF00FD5C6A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		21B4B0FB2B72E3EF00FD5C6A /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 21B4B0F82B72E3EF00FD5C6A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		21B4B0FD2B72E3EF00FD5C6A /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 21B4B0F82B72E3EF00FD5C6A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		21B4B1062B77F4F400FD5C6A /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 21B4B1052B77F4F400FD5C6A /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		21B4B1082B77F4F400FD5C6A /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 21B4B1052B77F4F400FD5C6A /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
 		};
 		658FC9F72B646AE900FE6D9F /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;

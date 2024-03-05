@@ -1,0 +1,75 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "" : {
+
+    },
+    "Back" : {
+
+    },
+    "Back to login" : {
+
+    },
+    "Be sure to check your spam folder" : {
+
+    },
+    "Confirmation sent!" : {
+
+    },
+    "Continue" : {
+
+    },
+    "Email" : {
+      "comment" : "The header for entering an email address"
+    },
+    "Enter a password..." : {
+      "comment" : "The placeholder for entering a password"
+    },
+    "Enter an email address" : {
+      "comment" : "The placeholder for entering an email address"
+    },
+    "Enter your first name" : {
+      "comment" : "The placeholder for entering a first name"
+    },
+    "Enter your last name" : {
+      "comment" : "The placeholder for entering a last name"
+    },
+    "First name" : {
+      "comment" : "The header for entering a first name"
+    },
+    "Getting everything ready for you..." : {
+
+    },
+    "hide" : {
+
+    },
+    "Last name" : {
+      "comment" : "The header for entering a last name"
+    },
+    "New recipe" : {
+
+    },
+    "Password" : {
+      "comment" : "The header for entering a password"
+    },
+    "Recipes" : {
+
+    },
+    "Reset password" : {
+
+    },
+    "Send email" : {
+
+    },
+    "Settings" : {
+
+    },
+    "show" : {
+
+    },
+    "We will send you an email to reset your password." : {
+
+    }
+  },
+  "version" : "1.0"
+}

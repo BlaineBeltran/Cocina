@@ -27,15 +27,5 @@ final class AuthenticateRouter: AuthenticateRoutable {
     }
     
     func navigateTo(destination: AuthenticateRouteDestination) {
-        // This is a possible code smell...look into making this more scaleable and less decoupled later.
-        // FIXME: Code smell
-        switch destination {
-        case .login:
-            presentingViewController?.show(UIHostingController(rootView: OnboardingLoginScreenView()), sender: self)
-        case .passwordReset:
-            presentingViewController?.show(UIHostingController(rootView: OnboardingEnterPasswordView()), sender: self)
-        case .passwordConfirmation:
-            presentingViewController?.show(UIHostingController(rootView: OnboardingPasswordSentConfirmationScreen()), sender: self)
-        }
     }
 }

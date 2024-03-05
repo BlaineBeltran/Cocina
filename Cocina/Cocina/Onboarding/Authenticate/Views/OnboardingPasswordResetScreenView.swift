@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct OnboardingPasswordResetScreenView: View {
-    @State private var email = ""
+    @Binding var email: String
+    @Environment(\.dismiss) private var dismiss
     
     var body: some View {
         ZStack {
@@ -23,7 +24,9 @@ struct OnboardingPasswordResetScreenView: View {
                     .foregroundStyle(Color.text.secondary)
                     .multilineTextAlignment(.center)
                     .padding([.trailing, .leading])
-                RamenFormSection(fields: [emailField])
+                RamenFormSection {
+                    emailField
+                }
                     .padding(.top, 35)
                 sendEmailButton
                     .padding(.top)
@@ -31,12 +34,26 @@ struct OnboardingPasswordResetScreenView: View {
             }
             .padding(.top, 50)
         }
-        .navigationBarBackButtonHidden(true)
+        .navigationBarBackButtonHidden()
+        .toolbar {
+            ToolbarItem(placement: .topBarLeading) {
+                Button {
+                    dismiss()
+                } label: {
+                    HStack(spacing: 5) {
+                        Image(systemName: "chevron.left")
+                        Text("Back")
+                    }
+                    .ramenFont(for: .bodyM)
+                    .foregroundStyle(Color.background.ramenPrimary)
+                }
+            }
+        }
     }
 }
 
 #Preview {
-    OnboardingPasswordResetScreenView()
+    OnboardingPasswordResetScreenView(email: .constant("test@gmail.com"))
 }
 
 private extension OnboardingPasswordResetScreenView {
