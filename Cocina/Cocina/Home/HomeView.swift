@@ -28,7 +28,11 @@ struct HomeView: View {
                     .frame(height: 85)
                     .foregroundStyle(Color.text.tertiary)
                     .overlay {
-                        Label("New recipe", systemImage: "camera.viewfinder")
+                        Label("Settings", systemImage: "camera.viewfinder")
+                    }
+                    .onTapGesture {
+                        moreSheetIsPresented.toggle()
+                        coordinator?.showProfile()
                     }
             }
             .padding([.top])
@@ -44,7 +48,7 @@ struct HomeView: View {
 
 extension HomeView {
     private var dismissAction: () -> () {
-        return { coordinator?.showProfile() }
+        return { }
     }
     
     private var navigationBar: some View {
