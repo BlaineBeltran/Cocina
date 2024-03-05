@@ -27,4 +27,11 @@ class OnboardingCoordinator: Coordinating {
         guard let coordinator = parentCoordinator as? AppCoordinator else { return }
         coordinator.setupTabs()
     }
+    
+    func showHome() {
+        guard let coordinator = parentCoordinator as? AppCoordinator else { return }
+        UIViewController.dismissTopMostModalViewController(within: coordinator.window, animated: true) {
+            coordinator.setupTabs()
+        }
+    }
 }

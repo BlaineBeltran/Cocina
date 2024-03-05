@@ -15,7 +15,14 @@ struct OnboardingAccountSelectionView: View {
     
     var body: some View {
         VStack {
-            appIconImage
+            TabView {
+                appIconImage
+                appIconImage
+                appIconImage
+                appIconImage
+            }
+            .tabViewStyle(.page(indexDisplayMode: .always))
+            .indexViewStyle(.page(backgroundDisplayMode: .always))
             Spacer()
             loginButton
             createAccountButton
@@ -23,12 +30,12 @@ struct OnboardingAccountSelectionView: View {
         }
         .sheet(isPresented: $presentLogin, content: {
             NavigationStack {
-                OnboardingLoginScreenView()
+                OnboardingEnterEmailAndPasswordView(coordinator: coordinator)
             }
         })
         .sheet(isPresented: $presentAccountCreation, content: {
             NavigationStack {
-                OnboardingEnterEmailView()
+                OnboardingEnterAccountInfoFormView()
             }
         })
     }
@@ -61,16 +68,8 @@ extension OnboardingAccountSelectionView {
     
     #warning("Remove this button before release!!!")
     private var skipAuthButton: some View {
-        Button(action: {
+        RamenDestructiveButton(type: .primaryDestructive, text: "Skip auth", buttonTappedAction: {
             coordinator?.skipAuth()
-        }, label: {
-            Text("Skip Auth")
-                .ramenFont(for: .headingS)
         })
-        .frame(maxWidth: 359)
-        .frame(height: 50)
-        .background(Color.warnings.warningRed)
-        .foregroundStyle(.white)
-        .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
     }
 }

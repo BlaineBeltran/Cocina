@@ -7,16 +7,18 @@
 
 import SwiftUI
 
-struct RamenFormSection: View {
-    let fields: [RamenFormField]
+struct RamenFormSection<Content: View>: View {
+    let content: Content
+    
+    init(@ViewBuilder content: () -> Content) {
+        self.content = content()
+    }
     
     var body: some View {
-        VStack(spacing: 20) {
-            ForEach(fields) { field in
-                field
-            }
+        VStack(spacing: 10) {
+            content
         }
-        .padding([.leading, .trailing, .top], 20)
+        .padding([.horizontal, .top], 20)
         .padding(.bottom, 15)
         .background {
             RoundedRectangle(cornerRadius: 25, style: .continuous)
@@ -27,6 +29,6 @@ struct RamenFormSection: View {
               
             }
         }
-        .padding([.leading, .trailing], 20)
+        .padding(.horizontal, 20)
     }
 }

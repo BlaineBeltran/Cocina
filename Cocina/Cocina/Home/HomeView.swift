@@ -17,10 +17,21 @@ struct HomeView: View {
             Spacer()
         }
         .sheet(isPresented: $moreSheetIsPresented, onDismiss: dismissAction) {
-            RamenButton(type: .secondaryAction, text: "Show settings") {
-                moreSheetIsPresented.toggle()
+            HStack {
+                RoundedRectangle(cornerRadius: 20, style: .continuous)
+                    .frame(height: 85)
+                    .foregroundStyle(Color.text.tertiary)
+                    .overlay {
+                        Label("New recipe", systemImage: "square.and.pencil")
+                    }
+                RoundedRectangle(cornerRadius: 20, style: .continuous)
+                    .frame(height: 85)
+                    .foregroundStyle(Color.text.tertiary)
+                    .overlay {
+                        Label("New recipe", systemImage: "camera.viewfinder")
+                    }
             }
-            .padding(.top)
+            .padding([.top])
             .presentationDetents([.custom(RamenContentFittingDetent.self)])
             .presentationDragIndicator(.visible)
         }
@@ -50,6 +61,5 @@ extension HomeView {
             .foregroundStyle(Color.background.ramenPrimary)
         }
         .padding([.horizontal], 20)
-
     }
 }

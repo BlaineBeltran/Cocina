@@ -6,14 +6,16 @@
 //
 
 import UIKit
+import FirebaseCore
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // Setup firebase
+        FirebaseApp.configure()
         
         // Set global navigation bar font style
         UINavigationBar.appearance().largeTitleTextAttributes = [.font: UIFont.ramenFont(for: .headingXL)]
